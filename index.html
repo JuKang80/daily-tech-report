@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daily Tech Report — GitHub Trending &amp; GeekNews</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
 </head>
 <body>
   <div class="layout">
@@ -25,112 +26,5 @@
       </div>
     </main>
   </div>
-
-  <script>
-    let reports = [];
-
-    function renderSidebar(activeId) {
-      const listEl = document.getElementById('date-list');
-      listEl.innerHTML = reports.map(r => `
-        <li>
-          <button class="date-btn ${r.id === activeId ? 'active' : ''}" data-id="${r.id}">
-            <span>${r.date}</span>
-            <span>${r.slot}</span>
-          </button>
-        </li>
-      `).join('');
-
-      listEl.querySelectorAll('.date-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-          const id = btn.dataset.id;
-          const url = new URL(window.location);
-          url.searchParams.set('report', id);
-          window.history.pushState({}, '', url);
-          selectReport(id);
-        });
-      });
-    }
-
-    async function selectReport(id) {
-      const item = reports.find(r => r.id === id) || reports[0];
-      if (!item) return;
-
-      renderSidebar(item.id);
-      document.getElementById('report-title').textContent = item.title;
-      document.getElementById('report-meta').textContent = `${item.date} · ${item.slot}`;
-
-      const contentEl = document.getElementById('report-content');
-      try {
-        const res = await fetch(item.path + '?t=' + Date.now());
-        if (!res.ok) throw new Error('Failed to load report');
-        contentEl.innerHTML = await res.text();
-        setupSectionToggles(contentEl);
-      } catch (err) {
-        contentEl.innerHTML = '<p class="meta">리포트 본문을 불러오지 못했습니다.</p>';
-      }
-    }
-
-    function setupSectionToggles(container) {
-      const headings = container.querySelectorAll('.section-heading');
-      headings.forEach((heading, idx) => {
-        const list = heading.nextElementSibling;
-        if (!list || !list.classList.contains('hn-list')) return;
-
-        const count = list.querySelectorAll('.hn-item').length;
-        const listId = `section-list-${idx}`;
-        list.id = listId;
-
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = 'section-toggle';
-        btn.setAttribute('aria-expanded', 'true');
-        btn.setAttribute('aria-controls', listId);
-
-        const titleSpan = document.createElement('span');
-        titleSpan.className = 'section-toggle-title';
-        titleSpan.textContent = heading.textContent.trim();
-
-        const metaSpan = document.createElement('span');
-        metaSpan.className = 'section-toggle-meta';
-        metaSpan.innerHTML = `<span class="section-count">${count}</span><span class="section-chevron" aria-hidden="true">▾</span>`;
-
-        btn.appendChild(titleSpan);
-        btn.appendChild(metaSpan);
-
-        heading.textContent = '';
-        heading.classList.add('is-collapsible');
-        heading.appendChild(btn);
-
-        btn.addEventListener('click', () => {
-          const expanded = btn.getAttribute('aria-expanded') === 'true';
-          btn.setAttribute('aria-expanded', String(!expanded));
-          list.classList.toggle('is-collapsed', expanded);
-        });
-      });
-    }
-
-    async function init() {
-      try {
-        const res = await fetch('reports/index.json?t=' + Date.now());
-        reports = await res.json();
-        if (!reports.length) {
-          document.getElementById('report-content').innerHTML = '<p class="meta">아직 등록된 리포트가 없습니다.</p>';
-          return;
-        }
-        const params = new URLSearchParams(window.location.search);
-        const requestedId = params.get('report');
-        selectReport(requestedId || reports[0].id);
-      } catch (err) {
-        document.getElementById('report-content').innerHTML = '<p class="meta">리포트 목록을 불러오지 못했습니다.</p>';
-      }
-    }
-
-    window.addEventListener('popstate', () => {
-      const params = new URLSearchParams(window.location.search);
-      selectReport(params.get('report') || (reports[0] && reports[0].id));
-    });
-
-    init();
-  </script>
 </body>
 </html>

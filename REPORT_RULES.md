@@ -27,7 +27,7 @@
   - **AI / HCI / 로보틱스 / 계산 사회과학**: Hugging Face Daily Papers / AlphaXiv / arXiv(`cs.AI`, `cs.LG`, `cs.CL`, `cs.HC`, `cs.RO`, `cs.CY`, `cs.SI`) 등에서 당일 반응이 좋거나 흥미로운 논문을 분야별 2개씩 선별한다.
   - **신경과학 / 인지심리학 / 행동경제학**: bioRxiv / PubMed / arXiv(`q-bio.NC`, `econ.GN` 등) 최근 1~3일 내 주요 논문 중 연구 임팩트와 흥미도가 높은 논문을 분야별 2개씩 선별한다.
   - **분야 무관 와일드카드 (6개)**: 위 분야에 얽매이지 않고 당일 가장 흥미롭거나 화제가 되는 논문을 자유롭게 6개 추가한다.
-  - 최근 리포트에 이미 소개된 논문은 중복 제외한다.
+  - 최근 리포트에 이미 소개된 논문은 `python3 scripts/verify_report.py --seen-papers 14`로 확인해 중복 제외한다.
 - 기억이나 검색 스니펫으로 URL을 추정하지 않고 **공식 API**로 메타데이터와 링크를 직접 조회한다.
   - **arXiv**: `export.arxiv.org/api/query` 결과의 `id` 기반 (`https://arxiv.org/abs/...`)
   - **bioRxiv / medRxiv**: `api.biorxiv.org/details/biorxiv/{start}/{end}` 결과의 정확한 `doi` 기반
