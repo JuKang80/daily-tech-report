@@ -1,0 +1,19 @@
+# Daily Tech Report
+
+> 매일 오전·오후 업데이트되는 한국어 테크 큐레이션: GitHub Trending, GeekNews, AI·HCI·신경과학·인지심리·행동경제·로보틱스·계산사회과학 최신 논문 요약.
+
+## How to Browse (For AI Agents & Non-JS Crawlers)
+This site loads report fragments dynamically on the client via `app.js`. If you cannot execute JavaScript, fetch the machine-readable index first:
+
+- Report Index (JSON): https://jukang80.github.io/daily-tech-report/reports/index.json
+- Sitemap (XML): https://jukang80.github.io/daily-tech-report/sitemap.xml
+
+Each entry in `reports/index.json` has `id`, `date`, `slot`, `title`, and `path` (a standalone HTML fragment under `reports/`).
+
+## Latest Reports
+- [2026-11-15 오전 테크 리포트](https://jukang80.github.io/daily-tech-report/reports/2026-11-15-am.html): GitHub Trending, GeekNews, AI/신경과학 최신 논문
+
+## Structure of Each Report
+1. **GitHub Trending**: 10 repositories with Korean descriptions and practical use cases.
+2. **GeekNews**: 10 trending tech discussions from news.hada.io.
+3. **Latest Papers**: 20 curated papers across AI, HCI, Neuroscience, Cognitive Psychology, Behavioral Economics, Robotics/BCI, Computational Social Science, and wildcards.
