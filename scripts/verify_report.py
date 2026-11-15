@@ -11,6 +11,7 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+import ssl
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -82,10 +83,18 @@ def check_url(url: str, timeout: float = 10.0) -> tuple[bool, str]:
         method="GET",
     )
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
+        try:
+            resp_ctx = urllib.request.urlopen(req, timeout=timeout)
+        except urllib.error.URLError as uerr:
+            if "CERTIFICATE_VERIFY_FAILED" in str(uerr):
+                ctx = ssl._create_unverified_context()
+                resp_ctx = urllib.request.urlopen(req, context=ctx, timeout=timeout)
+            else:
+                raise
+        with resp_ctx as resp:
             status = getattr(resp, "status", 200)
             body = resp.read(32768).decode("utf-8", errors="ignore")
-            if status != 200:
+            if not (200 <= status < 300):
                 return False, f"HTTP {status}"
             match = TITLE_RE.search(body)
             page_title = html.unescape(" ".join(match.group(1).split())) if match else ""
