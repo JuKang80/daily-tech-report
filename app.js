@@ -58,7 +58,10 @@ function updateActiveSidebar(activeId) {
 }
 
 function setupSectionToggles(container) {
-  const headings = container.querySelectorAll('.section-heading');
+  const headings = Array.from(container.querySelectorAll('.section-heading'));
+  const grid = document.createElement('div');
+  grid.className = 'report-grid';
+
   headings.forEach((heading, idx) => {
     const list = heading.nextElementSibling;
     if (!list || !list.classList.contains('hn-list')) return;
@@ -66,6 +69,10 @@ function setupSectionToggles(container) {
     const count = list.querySelectorAll('.hn-item').length;
     const listId = `section-list-${idx}`;
     list.id = listId;
+
+    list.querySelectorAll('.hn-item').forEach((item) => {
+      item.tabIndex = 0;
+    });
 
     const btn = document.createElement('button');
     btn.type = 'button';
@@ -101,6 +108,125 @@ function setupSectionToggles(container) {
       btn.setAttribute('aria-expanded', String(!expanded));
       list.classList.toggle('is-collapsed', expanded);
     });
+
+    const column = document.createElement('section');
+    column.className = 'report-column';
+    column.append(heading, list);
+    grid.appendChild(column);
+  });
+
+  if (grid.children.length > 0) {
+    container.replaceChildren(grid);
+  }
+}
+
+function openItemModal(item) {
+  const modal = document.getElementById('item-modal');
+  if (!modal) return;
+
+  const rankEl = item.querySelector('.hn-rank');
+  const tagEl = item.querySelector('.hn-tag');
+  const linkEl = item.querySelector('.hn-link');
+  const descEl = item.querySelector('.hn-desc');
+  const useEl = item.querySelector('.hn-use');
+  const detailEl = item.querySelector('.hn-detail-body');
+
+  const modalRank = document.getElementById('modal-rank');
+  const modalTag = document.getElementById('modal-tag');
+  const modalTitle = document.getElementById('modal-title');
+  const modalDesc = document.getElementById('modal-desc');
+  const modalUse = document.getElementById('modal-use');
+  const modalDetail = document.getElementById('modal-detail');
+  const modalLink = document.getElementById('modal-link');
+
+  modalRank.textContent = rankEl ? rankEl.textContent.trim() : '';
+  modalRank.hidden = !modalRank.textContent;
+
+  modalTag.textContent = tagEl ? tagEl.textContent.trim() : '';
+  modalTag.hidden = !modalTag.textContent;
+
+  modalTitle.textContent = linkEl ? linkEl.textContent.trim() : '';
+  modalDesc.textContent = descEl ? descEl.textContent.trim() : '';
+  modalDesc.hidden = !modalDesc.textContent;
+
+  if (useEl) {
+    modalUse.replaceChildren(...Array.from(useEl.childNodes, (n) => n.cloneNode(true)));
+    modalUse.hidden = false;
+  } else {
+    modalUse.replaceChildren();
+    modalUse.hidden = true;
+  }
+
+  if (detailEl) {
+    modalDetail.replaceChildren(...Array.from(detailEl.childNodes, (n) => n.cloneNode(true)));
+    modalDetail.hidden = false;
+  } else {
+    modalDetail.replaceChildren();
+    modalDetail.hidden = true;
+  }
+
+  const href = linkEl ? linkEl.getAttribute('href') : '';
+  if (href) {
+    modalLink.href = href;
+    modalLink.hidden = false;
+  } else {
+    modalLink.removeAttribute('href');
+    modalLink.hidden = true;
+  }
+
+  if (typeof modal.showModal === 'function') {
+    modal.showModal();
+  } else {
+    modal.setAttribute('open', '');
+  }
+}
+
+function initModal() {
+  const modal = document.getElementById('item-modal');
+  const closeBtn = document.getElementById('modal-close');
+  const contentEl = document.getElementById('report-content');
+  if (!modal || !closeBtn || !contentEl) return;
+
+  const closeModal = () => {
+    if (typeof modal.close === 'function') {
+      modal.close();
+    } else {
+      modal.removeAttribute('open');
+    }
+  };
+
+  closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+
+  contentEl.addEventListener('click', (event) => {
+    const item = event.target.closest('.hn-item');
+    if (!item) return;
+
+    const anchor = event.target.closest('a.hn-link');
+    if (anchor && (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button === 1)) {
+      return;
+    }
+
+    event.preventDefault();
+    openItemModal(item);
+  });
+
+  contentEl.addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    const item = event.target.closest('.hn-item');
+    if (!item) return;
+
+    const anchor = event.target.closest('a.hn-link');
+    if (anchor && (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)) {
+      return;
+    }
+
+    event.preventDefault();
+    openItemModal(item);
   });
 }
 
@@ -145,6 +271,7 @@ async function selectReport(id) {
 }
 
 async function init() {
+  initModal();
   const contentEl = document.getElementById('report-content');
   try {
     const res = await fetch('reports/index.json', { cache: 'no-cache' });

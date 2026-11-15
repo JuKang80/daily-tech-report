@@ -26,5 +26,26 @@
       </div>
     </main>
   </div>
+
+  <dialog id="item-modal" class="item-modal" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-badges">
+          <span id="modal-rank" class="hn-rank"></span>
+          <span id="modal-tag" class="hn-tag"></span>
+        </div>
+        <button type="button" id="modal-close" class="modal-icon-close" aria-label="닫기">✕</button>
+      </div>
+      <h3 id="modal-title" class="modal-title"></h3>
+      <div class="modal-body">
+        <p id="modal-desc" class="modal-desc"></p>
+        <p id="modal-use" class="hn-use" hidden></p>
+        <div id="modal-detail" class="hn-detail-body" hidden></div>
+      </div>
+      <div class="modal-footer">
+        <a id="modal-link" class="modal-open-link" href="#" target="_blank" rel="noopener">원문 보러가기 ↗</a>
+      </div>
+    </div>
+  </dialog>
 </body>
 </html>
