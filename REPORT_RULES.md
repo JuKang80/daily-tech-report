@@ -15,6 +15,10 @@
 - `news.hada.io` 인기 소식 상위 10개를 요약 및 활용 포인트와 함께 정리한다.
 
 ## 3. 최신 논문 (AI 5개 + 신경과학 5개)
+- **선정 기준 (화제성/큐레이션 우선)**:
+  - **AI (5개)**: Hugging Face Daily Papers / AlphaXiv 등에서 당일 반응이 좋은 논문을 우선 선정하고, 부족분은 arXiv 최신(`cs.AI`, `cs.LG`, `cs.CL`)에서 보충한다.
+  - **신경과학 (5개)**: bioRxiv(`neuroscience`) / PubMed 최근 1~3일 내 주요 논문 중 연구 임팩트와 흥미도가 높은 논문을 선별한다.
+  - 최근 리포트에 이미 소개된 논문은 중복 제외한다.
 - 기억이나 검색 스니펫으로 URL을 추정하지 않고 **공식 API**로 메타데이터와 링크를 직접 조회한다.
   - **arXiv**: `export.arxiv.org/api/query` 결과의 `id` 기반 (`https://arxiv.org/abs/...`)
   - **bioRxiv / medRxiv**: `api.biorxiv.org/details/biorxiv/{start}/{end}` 결과의 정확한 `doi` 기반
