@@ -64,9 +64,49 @@
         const res = await fetch(item.path + '?t=' + Date.now());
         if (!res.ok) throw new Error('Failed to load report');
         contentEl.innerHTML = await res.text();
+        setupSectionToggles(contentEl);
       } catch (err) {
         contentEl.innerHTML = '<p class="meta">리포트 본문을 불러오지 못했습니다.</p>';
       }
+    }
+
+    function setupSectionToggles(container) {
+      const headings = container.querySelectorAll('.section-heading');
+      headings.forEach((heading, idx) => {
+        const list = heading.nextElementSibling;
+        if (!list || !list.classList.contains('hn-list')) return;
+
+        const count = list.querySelectorAll('.hn-item').length;
+        const listId = `section-list-${idx}`;
+        list.id = listId;
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'section-toggle';
+        btn.setAttribute('aria-expanded', 'true');
+        btn.setAttribute('aria-controls', listId);
+
+        const titleSpan = document.createElement('span');
+        titleSpan.className = 'section-toggle-title';
+        titleSpan.textContent = heading.textContent.trim();
+
+        const metaSpan = document.createElement('span');
+        metaSpan.className = 'section-toggle-meta';
+        metaSpan.innerHTML = `<span class="section-count">${count}</span><span class="section-chevron" aria-hidden="true">▾</span>`;
+
+        btn.appendChild(titleSpan);
+        btn.appendChild(metaSpan);
+
+        heading.textContent = '';
+        heading.classList.add('is-collapsible');
+        heading.appendChild(btn);
+
+        btn.addEventListener('click', () => {
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', String(!expanded));
+          list.classList.toggle('is-collapsed', expanded);
+        });
+      });
     }
 
     async function init() {

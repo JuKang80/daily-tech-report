@@ -137,11 +137,73 @@ body {
   gap: 0.5rem;
 }
 
+.section-heading.is-collapsible {
+  display: block;
+}
+
+.section-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.55rem 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.section-toggle:hover {
+  background: var(--surface-alt);
+  border-color: var(--muted);
+}
+
+.section-toggle-title {
+  line-height: 1.35;
+}
+
+.section-toggle-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-shrink: 0;
+  color: var(--muted);
+}
+
+.section-count {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.05rem 0.5rem;
+  border-radius: 999px;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+}
+
+.section-chevron {
+  display: inline-block;
+  font-size: 0.9rem;
+  transition: transform 0.18s ease;
+}
+
+.section-toggle[aria-expanded="false"] .section-chevron {
+  transform: rotate(-90deg);
+}
+
 .hn-list {
   border: 1px solid var(--border);
   border-radius: 10px;
   background: var(--surface);
   overflow: hidden;
+}
+
+.hn-list.is-collapsed {
+  display: none;
 }
 
 .hn-item {
