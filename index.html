@@ -32,11 +32,21 @@
   </script>
 
   <link rel="stylesheet" href="style.css" />
+  <script src="favorites.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
   <div class="layout">
     <aside class="sidebar">
+      <nav class="sidebar-nav" aria-label="페이지 이동">
+        <a href="index.html" class="nav-link active" aria-current="page">
+          <span>데일리 리포트</span>
+        </a>
+        <a href="favorites.html" class="nav-link">
+          <span>★ 즐겨찾기</span>
+          <span id="favorites-nav-count" class="nav-badge" hidden>0</span>
+        </a>
+      </nav>
       <h2>날짜</h2>
       <ul id="date-list" class="date-list">
         <li class="meta">불러오는 중...</li>
@@ -76,6 +86,7 @@
         <div id="modal-detail" class="hn-detail-body" hidden></div>
       </div>
       <div class="modal-footer">
+        <button type="button" id="modal-fav-btn" class="modal-fav-btn" aria-pressed="false">☆ 즐겨찾기</button>
         <a id="modal-link" class="modal-open-link" href="#" target="_blank" rel="noopener">원문 보러가기 ↗</a>
       </div>
     </div>

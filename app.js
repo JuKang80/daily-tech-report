@@ -1,4 +1,5 @@
 let reports = [];
+let currentReport = null;
 const reportCache = new Map();
 let activeAbortController = null;
 
@@ -120,119 +121,11 @@ function setupSectionToggles(container) {
   }
 }
 
-function openItemModal(item) {
-  const modal = document.getElementById('item-modal');
-  if (!modal) return;
-
-  const rankEl = item.querySelector('.hn-rank');
-  const tagEl = item.querySelector('.hn-tag');
-  const linkEl = item.querySelector('.hn-link');
-  const descEl = item.querySelector('.hn-desc');
-  const useEl = item.querySelector('.hn-use');
-  const detailEl = item.querySelector('.hn-detail-body');
-
-  const modalRank = document.getElementById('modal-rank');
-  const modalTag = document.getElementById('modal-tag');
-  const modalTitle = document.getElementById('modal-title');
-  const modalDesc = document.getElementById('modal-desc');
-  const modalUse = document.getElementById('modal-use');
-  const modalDetail = document.getElementById('modal-detail');
-  const modalLink = document.getElementById('modal-link');
-
-  modalRank.textContent = rankEl ? rankEl.textContent.trim() : '';
-  modalRank.hidden = !modalRank.textContent;
-
-  modalTag.textContent = tagEl ? tagEl.textContent.trim() : '';
-  modalTag.hidden = !modalTag.textContent;
-
-  modalTitle.textContent = linkEl ? linkEl.textContent.trim() : '';
-  modalDesc.textContent = descEl ? descEl.textContent.trim() : '';
-  modalDesc.hidden = !modalDesc.textContent;
-
-  if (useEl) {
-    modalUse.replaceChildren(...Array.from(useEl.childNodes, (n) => n.cloneNode(true)));
-    modalUse.hidden = false;
-  } else {
-    modalUse.replaceChildren();
-    modalUse.hidden = true;
-  }
-
-  if (detailEl) {
-    modalDetail.replaceChildren(...Array.from(detailEl.childNodes, (n) => n.cloneNode(true)));
-    modalDetail.hidden = false;
-  } else {
-    modalDetail.replaceChildren();
-    modalDetail.hidden = true;
-  }
-
-  const href = linkEl ? linkEl.getAttribute('href') : '';
-  if (href) {
-    modalLink.href = href;
-    modalLink.hidden = false;
-  } else {
-    modalLink.removeAttribute('href');
-    modalLink.hidden = true;
-  }
-
-  if (typeof modal.showModal === 'function') {
-    modal.showModal();
-  } else {
-    modal.setAttribute('open', '');
-  }
-}
-
-function initModal() {
-  const modal = document.getElementById('item-modal');
-  const closeBtn = document.getElementById('modal-close');
-  const contentEl = document.getElementById('report-content');
-  if (!modal || !closeBtn || !contentEl) return;
-
-  const closeModal = () => {
-    if (typeof modal.close === 'function') {
-      modal.close();
-    } else {
-      modal.removeAttribute('open');
-    }
-  };
-
-  closeBtn.addEventListener('click', closeModal);
-  modal.addEventListener('click', (event) => {
-    if (event.target === modal) {
-      closeModal();
-    }
-  });
-
-  contentEl.addEventListener('click', (event) => {
-    const item = event.target.closest('.hn-item');
-    if (!item) return;
-
-    const anchor = event.target.closest('a.hn-link');
-    if (anchor && (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button === 1)) {
-      return;
-    }
-
-    event.preventDefault();
-    openItemModal(item);
-  });
-
-  contentEl.addEventListener('keydown', (event) => {
-    if (event.key !== 'Enter' && event.key !== ' ') return;
-    const item = event.target.closest('.hn-item');
-    if (!item) return;
-
-    const anchor = event.target.closest('a.hn-link');
-    if (anchor && (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)) {
-      return;
-    }
-
-    event.preventDefault();
-    openItemModal(item);
-  });
-}
-
 async function selectReport(id) {
   const item = reports.find((r) => r.id === id) || reports[0];
   if (!item) return;
+
+  currentReport = item;
 
   if (activeAbortController) {
     activeAbortController.abort();
@@ -260,6 +153,9 @@ async function selectReport(id) {
     if (controller.signal.aborted) return;
     contentEl.innerHTML = htmlText;
     setupSectionToggles(contentEl);
+    if (window.DTRFavorites) {
+      window.DTRFavorites.decorateReportItems(contentEl, item);
+    }
   } catch (err) {
     if (err.name === 'AbortError') return;
     setStatusMessage(contentEl, '리포트 본문을 불러오지 못했습니다.');
@@ -271,8 +167,12 @@ async function selectReport(id) {
 }
 
 async function init() {
-  initModal();
   const contentEl = document.getElementById('report-content');
+  if (window.DTRFavorites) {
+    window.DTRFavorites.initItemInteractions(contentEl, {
+      getReportMeta: () => currentReport,
+    });
+  }
   try {
     const res = await fetch('reports/index.json', { cache: 'no-cache' });
     if (!res.ok) throw new Error('Failed to load report index');
