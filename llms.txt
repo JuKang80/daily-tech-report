@@ -11,6 +11,7 @@ This site loads report fragments dynamically on the client via `app.js`. If you 
 Each entry in `reports/index.json` has `id`, `date`, `slot`, `title`, and `path` (a standalone HTML fragment under `reports/`).
 
 ## Latest Reports
+- [2026-11-18 오후 테크 리포트](https://jukang80.github.io/daily-tech-report/reports/2026-11-18-pm.html): GitHub Trending, GeekNews, AI/신경과학 최신 논문
 - [2026-11-18 오전 테크 리포트](https://jukang80.github.io/daily-tech-report/reports/2026-11-18-am.html): GitHub Trending, GeekNews, AI/신경과학 최신 논문
 - [2026-11-17 오후 테크 리포트](https://jukang80.github.io/daily-tech-report/reports/2026-11-17-pm.html): GitHub Trending, GeekNews, AI/신경과학 최신 논문
 - [2026-11-17 오전 테크 리포트](https://jukang80.github.io/daily-tech-report/reports/2026-11-17-am.html): GitHub Trending, GeekNews, AI/신경과학 최신 논문
