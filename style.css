@@ -166,6 +166,12 @@ main {
   align-items: start;
 }
 
+@media (min-width: 1181px) {
+  .report-grid:has(> .report-column:nth-child(4)) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 1180px) {
   .report-grid {
     grid-template-columns: 1fr;

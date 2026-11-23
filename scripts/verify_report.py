@@ -136,10 +136,14 @@ def check_structure(report_path: Path, parser: ReportLinkParser | None = None) -
     if parser.has_document_wrapper:
         errors.append("must be an HTML fragment without <html> or <body> tags")
     counts = parser.class_counts
-    if counts["section-heading"] != 3:
-        errors.append(f"expected 3 .section-heading elements, found {counts['section-heading']}")
-    if counts["hn-list"] != 3:
-        errors.append(f"expected 3 .hn-list elements, found {counts['hn-list']}")
+    if counts["section-heading"] not in (3, 4):
+        errors.append(
+            f"expected 3 or 4 .section-heading elements, found {counts['section-heading']}"
+        )
+    if counts["hn-list"] != counts["section-heading"]:
+        errors.append(
+            f"mismatch: {counts['section-heading']} .section-heading vs {counts['hn-list']} .hn-list"
+        )
     item_count = counts["hn-item"]
     if item_count == 0:
         errors.append("no .hn-item elements found")
