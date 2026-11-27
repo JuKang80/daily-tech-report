@@ -1,0 +1,687 @@
+<h2 class="section-heading">1. GitHub Trending Top 20 저장소 (언어별 일간·주간 트렌딩 10 + 최근 신규 급상승 10)</h2>
+<div class="hn-list">
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#01</span>
+      <a class="hn-link" href="https://github.com/awslabs/cli-agent-orchestrator" target="_blank" rel="noopener">awslabs/cli-agent-orchestrator</a>
+      <span class="hn-tag">Python · 언어 일간 트렌딩 · 격리된 tmux 세션 기반 멀티 AI 코딩 CLI 오케스트레이터</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> AWS Labs가 공개한 Apache-2.0 멀티에이전트 오케스트레이터(CLI Agent Orchestrator, CAO)로, 로컬 <code>cao-server</code>가 Claude Code, Kiro CLI, Codex CLI, Antigravity CLI, Hermes 등 각 코딩 에이전트 CLI를 격리된 tmux 터미널 세션으로 실행해 감독(supervisor) 에이전트가 병렬·순차 작업을 위임·조율합니다(누적 1,724 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 서로 다른 코딩 에이전트 CLI의 네이티브 인증과 기능을 그대로 유지한 채, 프런트엔드·백엔드·테스트 등 전문 에이전트에게 작업을 나눠 동시에 실행하는 로컬 멀티에이전트 개발 파이프라인을 구성할 때 도입합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#02</span>
+      <a class="hn-link" href="https://github.com/google-research/paper-orchestra" target="_blank" rel="noopener">google-research/paper-orchestra</a>
+      <span class="hn-tag">Python · 언어 일간 트렌딩 · Google Cloud AI Research 멀티에이전트 논문 자동 작성 프레임워크</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> Google Cloud AI Research가 공개한 Apache-2.0 프레임워크로, 아이디어 메모와 실험 로그 등 비정형 사전 자료를 받아 개요 설계, Semantic Scholar 문헌 검색·종합, 섹션 집필, 내용 개선, 플롯·개념도 생성 전담 에이전트들을 순차 조율해 학회 템플릿에 맞춘 LaTeX 원고를 생성합니다(누적 6,627 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 실험 로그와 예비 결과 노트만 쌓여 있는 연구 프로젝트에서 선행 문헌 정리부터 도표 생성 및 LaTeX 초안 구조화까지의 초기 집필 공수를 대폭 단축하는 데 활용합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#03</span>
+      <a class="hn-link" href="https://github.com/colbymchenry/codegraph" target="_blank" rel="noopener">colbymchenry/codegraph</a>
+      <span class="hn-tag">TypeScript · 언어 일간 트렌딩 · Rust 커널 기반 100% 로컬 실시간 코드 지식 그래프</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 코드 변경 사항을 실시간으로 반영해 사전 인덱싱된 코드 지식 그래프를 로컬에서 유지하는 MIT 오픈소스 도구로, Rust 커널이 심볼 관계와 호출 구조를 정밀 추출해 Claude Code, Cursor, Codex, OpenCode, Gemini, Antigravity 등 주요 코딩 에이전트의 토큰 소모와 탐색 호출을 줄여 줍니다(누적 78,932 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 대형 모노레포에서 AI 코딩 에이전트가 매번 전체 파일을 <code>grep</code>으로 뒤지며 컨텍스트 윈도를 낭비하는 문제를 막고, 의존성·심볼 관계만 외과적으로 주입하고자 할 때 연결합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#04</span>
+      <a class="hn-link" href="https://github.com/Fission-AI/OpenSpec" target="_blank" rel="noopener">Fission-AI/OpenSpec</a>
+      <span class="hn-tag">TypeScript · 언어 일간 트렌딩 · AI 코딩 어시스턴트용 스펙 주도 개발(SDD) 프레임워크</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 신규(greenfield)뿐 아니라 기존 운영 코드(brownfield)에서도 유연하고 반복적인 스펙 주도 개발(Spec-Driven Development)을 적용하도록 돕는 MIT 도구로, <code>/openspec-explore</code>와 <code>/openspec-propose</code> 명령을 통해 변경 제안서(<code>proposal.md</code>)와 요구사항·시나리오(<code>specs/</code>)를 먼저 합의한 뒤 구현·아카이브합니다(누적 75,895 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> AI 에이전트에게 바로 코드 수정을 시켰다가 요구사항 오해로 대규모 롤백을 겪는 일을 줄이고, 팀 내 변경 명세와 구현 이력을 마크다운 아티팩트로 남길 때 도입합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#05</span>
+      <a class="hn-link" href="https://github.com/rtk-ai/rtk" target="_blank" rel="noopener">rtk-ai/rtk</a>
+      <span class="hn-tag">Rust · 언어 일간 트렌딩 · 개발 CLI 출력 압축으로 LLM 토큰 60~90% 절감하는 프록시</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 의존성 없는 단일 Rust 바이너리(<code>rtk</code>, Apache-2.0/BUSL-1.1)로 동작하는 CLI 비용 절감 프록시로, AI 코딩 에이전트가 반복 실행하는 <code>git</code>·테스트·린트·빌드 명령의 장황한 터미널 출력을 핵심 정보 위주로 재구성·압축해 LLM 토큰 소비량을 60~90% 줄여 줍니다(누적 88,045 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 장시간 자율 디버깅이나 대규모 테스트 루프를 도는 코딩 에이전트 환경에 한 번 설치해 두어 API 토큰 비용과 컨텍스트 오염을 자동으로 억제합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#06</span>
+      <a class="hn-link" href="https://github.com/0xPlaygrounds/rig" target="_blank" rel="noopener">0xPlaygrounds/rig</a>
+      <span class="hn-tag">Rust · 언어 일간 트렌딩 · 모듈형 Rust LLM 라이브러리 및 Bevy 플러그인 기반 코딩 에이전트</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 모듈형·확장형 LLM 애플리케이션 구축용 MIT Rust 라이브러리이자, 그 위에서 도구·명령·세션·로그인·터미널 뷰를 각각 Bevy ECS 플러그인으로 분리해 구현한 터미널 코딩 에이전트(<code>rig</code>)입니다. 실행 중 코드를 고친 뒤 <code>/reload</code>로 현재 세션을 잃지 않고 에이전트를 즉시 재빌드·교체할 수 있습니다(누적 9,292 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> Rust 백엔드 서비스에 에이전트 파이프라인을 임베딩하거나, 에이전트 자신이 스스로의 도구·UI 플러그인을 수정하며 진화하는 자가 확장형 터미널 에이전트를 실험할 때 활용합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#07</span>
+      <a class="hn-link" href="https://github.com/wealthfolio/wealthfolio" target="_blank" rel="noopener">wealthfolio/wealthfolio</a>
+      <span class="hn-tag">Rust · 언어 일간 트렌딩 · 완전 로컬 우선 프라이빗 개인 자산·포트폴리오 트래커</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 모든 금융 데이터를 외부 서버가 아닌 사용자 기기에 보관하는 AGPL-3.0 로컬 우선(local-first) 자산 관리 앱으로, macOS·Windows·Linux 데스크톱은 물론 iOS·Android 앱과 Docker 셀프호스팅을 지원하며 투자 수익률, 순자산 추이, 지출 및 자산 시뮬레이션을 제공합니다(누적 9,803 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 상용 핀테크 앱에 계좌와 자산 내역을 넘기지 않고 다중 통화·주식·현금 포트폴리오를 개인 PC나 홈서버에서 안전하게 통합 추적할 때 도입합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#08</span>
+      <a class="hn-link" href="https://github.com/egoist/mygo" target="_blank" rel="noopener">egoist/mygo</a>
+      <span class="hn-tag">Go · 언어 일간 트렌딩 · cgo 없는 순수 Go 네이티브 GPU UI·웹뷰 크로스플랫폼 프레임워크</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> cgo 의존성 없이 순수 Go만으로 수 MB 크기 단일 바이너리 데스크톱(macOS·Linux·Windows)·모바일(iOS·Android) 앱을 만드는 MIT 프레임워크입니다. OS 내장 웹뷰(타입 안전 TypeScript IPC 클라이언트 자동 생성)와 자체 GPU 렌더링 네이티브 <code>ui</code> 패키지(flexbox/grid, 가상화 리스트, Liquid Glass 지원)를 한 창 안에서 섞어 쓸 수 있습니다(누적 7,055 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> Electron의 메모리 점유나 C++/Rust 툴체인 복잡성 없이 Go 백엔드 로직과 빠른 네이티브·웹 하이브리드 데스크톱 도구를 단일 바이너리로 배포할 때 선택합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#09</span>
+      <a class="hn-link" href="https://github.com/getarcaneapp/arcane" target="_blank" rel="noopener">getarcaneapp/arcane</a>
+      <span class="hn-tag">Go · 언어 일간 트렌딩 · 누구나 쓰기 쉬운 현대적 Docker 컨테이너 관리 대시보드</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> BSD-3-Clause 라이선스의 Go 기반 차세대 Docker 관리 플랫폼(v3)으로, 직관적인 다크·라이트 웹 대시보드에서 컨테이너, Compose 프로젝트, 볼륨, 네트워크 및 보안 점검 상태를 손쉽게 모니터링하고 제어할 수 있습니다(누적 10,643 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 무거운 엔터프라이즈 오케스트레이터 대신 개인 홈서버나 소규모 팀의 Docker 호스트를 깔끔한 오픈소스 웹 UI로 관리하려는 경우 Portainer 대안으로 살펴봅니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#10</span>
+      <a class="hn-link" href="https://github.com/datazip-inc/olake-go" target="_blank" rel="noopener">datazip-inc/olake-go</a>
+      <span class="hn-tag">Go · 언어 일간 트렌딩 · DB·Kafka·S3를 Apache Iceberg·Parquet로 고속 복제하는 엔진</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> Postgres, MySQL, MongoDB, Oracle, MSSQL, DB2 같은 트랜잭션 DB와 Kafka, S3 데이터를 벤더 종속 없는 Apache Iceberg 테이블 또는 Parquet 포맷으로 실시간·고속 복제하는 Apache-2.0 데이터 수집 엔진으로, 웹 UI와 CLI를 모두 제공합니다(누적 2,379 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> OLTP 데이터베이스의 운영 부하를 최소화하면서 Trino·Spark·DuckDB 등 어떤 쿼리 엔진에서도 바로 읽을 수 있는 오픈 레이크하우스(Iceberg) 파이프라인을 구축할 때 활용합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#11</span>
+      <a class="hn-link" href="https://github.com/libracoder/kiri" target="_blank" rel="noopener">libracoder/kiri</a>
+      <span class="hn-tag">Rust · 신규 급상승(11/02 생성) · Docker CLI 호환 초경량 컨테이너 런타임·무료 Ngrok 대안</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 무겁고 느린 Docker Desktop을 대체하기 위해 Rust로 구현한 Apache-2.0 크로스플랫폼(macOS 14+·Windows WSL 2·Linux) 컨테이너 런타임입니다. 기존 <code>docker</code> CLI, Compose, buildx 명령과 호환되며 프로젝트별 그룹핑 UI, 로컬 도메인 자동 매핑, 무료 Ngrok 대체 터널링까지 기본 내장했습니다(누적 14,041 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 노트북 배터리 소모와 유휴 메모리 점유가 큰 Docker Desktop 대신 가벼운 로컬 컨테이너 개발 환경과 외부 웹훅 테스트 터널을 한 번에 쓰고 싶을 때 도입합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#12</span>
+      <a class="hn-link" href="https://github.com/janestreet/agent_skills" target="_blank" rel="noopener">janestreet/agent_skills</a>
+      <span class="hn-tag">Markdown · 신규 급상승(11/03 생성) · Jane Street 공식 공개 소크라테스식 AI 튜터 스킬</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 글로벌 퀀트 트레이딩 기업 Jane Street이 사내에서 실제로 활용해 온 에이전트 스킬 중 첫 공개한 MIT 저장소로, 첫 수록 스킬인 <code>socratic-tutor</code>는 사전 진단 평가, 0~5단계 스킬 맵 구성, 한 번에 한 질문씩 던지는 소크라테스식 문답, 간격 복습, 최종 평가로 LLM을 엄격한 개인 교사로 바꿉니다(누적 12,059 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 코딩 에이전트나 일반 챗봇이 정답을 한꺼번에 떠먹여 주는 대신, 새로운 언어·알고리즘·시스템 개념을 스스로 유도해 익히도록 <code>SKILL.md</code> 규격 스킬로 설치해 사용합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#13</span>
+      <a class="hn-link" href="https://github.com/patch-gg/pixelfx" target="_blank" rel="noopener">patch-gg/pixelfx</a>
+      <span class="hn-tag">JavaScript · 신규 급상승(10/30 생성) · 244종 코드 기반 픽셀아트 이펙트 + Claude Code 스킬</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 불꽃, 폭발, 마법, 날씨, UI, 크리처 등 244가지 픽셀아트 이펙트·애니메이션을 작은 코드 조각으로 구현해 둔 MIT 라이브러리로, 브라우저 갤러리에서 실시간 재생·팔레트 재색칠·스프라이트 시트 내보내기를 지원하며 “초안→렌더→육안 확인→정제” 과정을 거치는 Claude Code 제작 스킬도 포함합니다(누적 9,643 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 2D 인디 게임이나 웹 인터랙션에 통일된 화풍의 타격감 있는 픽셀 VFX를 코드 기반으로 생성·커스터마이징하고 스프라이트 시트로 추출할 때 활용합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#14</span>
+      <a class="hn-link" href="https://github.com/ersinkoc/phonebox" target="_blank" rel="noopener">ersinkoc/phonebox</a>
+      <span class="hn-tag">JavaScript · 신규 급상승(11/07 생성) · 구형 Android 폰을 PC 데스크 패널·터치 컨트롤 덱으로</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 루팅이나 클라우드 계정 없이 USB 또는 Wi-Fi로 Windows·Linux·macOS(.NET 10 에이전트)에 연결해 서랍 속 구형 Android 스마트폰을 데스크용 보조 터치 패널로 바꾸는 MIT 프로젝트입니다. PC 시스템 자원 모니터링, AI 코딩 세션 상태, 미디어 제어 등 124개 커스텀 위젯을 지원합니다(누적 7,683 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 비싼 Stream Deck 하드웨어를 사는 대신 안 쓰는 안드로이드 폰을 모니터 아래에 거치해 CPU/GPU 온도, 에이전트 실행 현황, 단축키 매크로 컨트롤 덱으로 재활용합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#15</span>
+      <a class="hn-link" href="https://github.com/expo/exact" target="_blank" rel="noopener">expo/exact</a>
+      <span class="hn-tag">Rust · 신규 급상승(11/02 생성) · 100ms 콜드 스타트·에이전트 네이티브 전 플랫폼 앱 프레임워크</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> Expo 팀이 공개한 Rust 기반 MIT 전 플랫폼(웹·iOS·macOS·Android·Linux) 프레임워크 ‘Exact’입니다. 최저 공통분모 타협 없이 웹은 실제 DOM, iOS는 UIKit, macOS는 AppKit, Android는 Material 3 네이티브 뷰를 구동하며 100ms 콜드 스타트, 20KB 웹 런타임, 코딩 에이전트가 빌드·실행·시각 검증을 단일 루프로 돌리는 에이전트 네이티브 구조를 채택했습니다(누적 5,233 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> AI 코딩 에이전트가 단일 소스 코드에서 웹과 모바일·데스크톱 네이티브 앱을 동시에 빌드하고 스스로 화면을 보며 검증하는 차세대 앱 개발 아키텍처를 탐색할 때 살펴봅니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#16</span>
+      <a class="hn-link" href="https://github.com/elvarofficial/teardown" target="_blank" rel="noopener">elvarofficial/teardown</a>
+      <span class="hn-tag">JavaScript · 신규 급상승(10/30 생성) · 어떤 기계든 분해 가능한 3D 인터랙티브 시뮬레이터 스킬</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> “4행정 엔진이나 기계식 시계가 어떻게 작동하는지 분해 시뮬레이터로 보여줘”라고 요청하면 Claude Code가 Three.js와 폰트를 인라인한 단일 오프라인 HTML 페이지를 생성하는 MIT 스킬입니다. 실시간 수치 계기판, 부품 분해 버튼, 무조작 시 자동 투어, 60fps MP4 및 프로시저럴 사운드 녹화까지 지원합니다(누적 4,326 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 하드웨어 원리 설명, 교육용 인터랙티브 교재, 제품 내부 구조 데모 영상이나 오프라인 HTML 웹 자료를 코딩 에이전트에게 대화형으로 제작시킬 때 설치합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#17</span>
+      <a class="hn-link" href="https://github.com/imxieyi/Kernarium" target="_blank" rel="noopener">imxieyi/Kernarium</a>
+      <span class="hn-tag">C++ · 신규 급상승(11/07 생성) · User-mode Linux 기반 iOS 네이티브 리눅스·안드로이드 런타임</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> User-mode Linux 커널을 arm64 네이티브 코드로 컴파일·링크해 iOS 26+ 기기에서 실제 Linux 커널과 Android 환경(Andarium)을 구동할 수 있게 해주는 오픈소스 런타임입니다. App Store 심사 규정으로 내려간 뒤 AltStore·SideStore 소스를 통한 사이드로딩을 지원합니다(누적 3,135 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> iOS 환경에서 User-mode Linux 커널 포팅, 가상 주소 공간 제약 우회, 모바일 하이퍼바이저/런타임 구현 기법을 연구할 때 핵심 레퍼런스로 분석합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#18</span>
+      <a class="hn-link" href="https://github.com/s1dashu/quiet-md" target="_blank" rel="noopener">s1dashu/quiet-md</a>
+      <span class="hn-tag">Rust · 신규 급상승(11/01 생성) · Rust + GPUI 기반 초고속 로컬 우선 마크다운 노트·화이트보드 앱</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> Rust와 Zed 에디터의 GPU 가속 UI 프레임워크인 GPUI로 제작된 MIT 라이선스 크로스플랫폼(macOS·Windows·Linux) 네이티브 노트 앱입니다. Electron 없이 실제 로컬 폴더 구조를 그대로 다루며, 실시간 자동 서식 마크다운 에디터와 노트 내부 화이트보드 캔버스를 제공합니다(누적 2,987 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 무거운 웹 기반 노트 앱 대신 빠른 반응 속도의 네이티브 로컬 마크다운 지식 저장소를 쓰거나 GPUI 기반 실전 데스크톱 앱 설계 코드를 학습할 때 참고합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#19</span>
+      <a class="hn-link" href="https://github.com/caru-ini/stack-diagram" target="_blank" rel="noopener">caru-ini/stack-diagram</a>
+      <span class="hn-tag">TypeScript · 신규 급상승(11/01 생성) · 한 줄 설명으로 공식 로고 포함 아키텍처 다이어그램 생성 스킬</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> “Vercel 위 Next.js와 Hono API, Neon Postgres, Clerk 인증, Stripe 결제, GitHub Actions 배포”처럼 기술 스택을 한 문장으로 설명하면 Claude Code·Codex·Cursor가 공식 브랜드 로고가 들어간 다크/라이트 테마 대응 아키텍처 다이어그램을 그려 주는 MIT 스킬입니다(누적 2,976 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> README 문서나 기술 제안서, 모노레포 툴링 구조도를 작성할 때 수작업 드로잉 툴을 열지 않고 에이전트에게 일관된 고품질 시스템 다이어그램을 즉시 생성시킵니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#20</span>
+      <a class="hn-link" href="https://github.com/JosssphZhou/poki" target="_blank" rel="noopener">JosssphZhou/poki</a>
+      <span class="hn-tag">Swift · 신규 급상승(11/05 생성) · 실물 iPhone 화면을 읽고 직접 터치·입력하는 온디바이스 에이전트</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 무료 Apple 계정과 USB 연결만으로 실물 iPhone에 설치되어 Dynamic Island에 작업 상태를 띄우며 실제 iOS 앱 화면을 읽고 탭·타이핑·스크롤을 수행하는 AGPL-3.0 오픈소스 에이전트 앱입니다. 사용자 본인의 모델 계정을 쓰며 결제·삭제·Wallet 동작 앞에서는 반드시 수동 승인을 요구합니다(누적 2,197 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> API가 열려 있지 않은 iOS 앱 간 반복 심부름 자동화나 모바일 UI 접근성·에이전트 제어 안전장치(결제 승인 게이트) 구현 사례를 살펴볼 때 활용합니다.</p>
+    </div>
+  </div>
+</div>
+
+<h2 class="section-heading">2. GeekNews (news.hada.io) 인기 소식</h2>
+<div class="hn-list">
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#01</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37963" target="_blank" rel="noopener">Show GN: 틈 - 배포한 사이트를 밖에서 열어 보는 노출 점검 (Supabase 공개 테이블, /.env, 번들 속 키)</a>
+      <span class="hn-tag">news.hada.io · 보안 점검 / 바이브 코딩 배포물 비밀키·RLS 노출 진단 도구</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> AI 바이브 코딩으로 빠르게 배포한 웹 서비스에서 자주 터지는 Supabase RLS 미설정, JS 번들 속 <code>service_role</code>/<code>sk-</code>/<code>AKIA</code> 키 노출, 열린 <code>/.env</code>·<code>/.git/HEAD</code>·소스맵, Next.js CVE-2025-29927, <code>package-lock.json</code> OSV.dev 취약점을 가입 없이 진단하는 웹 도구입니다. 실제 응답으로 입증된 ‘확정’과 패턴 기반 ‘의심’을 구분하며, Supabase는 행 데이터를 받지 않고 <code>limit=0 + count=exact</code>로 건수만 확인합니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> AI 코딩 에이전트로 MVP를 배포하기 직전·직후 도메인과 lockfile을 1차 점검해 치명적인 DB 테이블·API 키 유출 사고를 예방하는 체크리스트 관문으로 활용합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#02</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37958" target="_blank" rel="noopener">Show GN: Subbrain - ChatGPT·Claude·Gemini·Grok 대화를 하나로 묶는 로컬 우선 작업 메모리</a>
+      <span class="hn-tag">news.hada.io · 로컬 메모리 / SQLite·단계별 목차 MCP 기반 AI 대화 통합 허브</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> ChatGPT·Claude·Gemini·Grok 내보내기 파일과 Claude Code 세션을 로컬 SQLite DB 하나로 통합해, 완료·진행 중·멈춤 상태를 분류하고 프로젝트→과제→다음 할 일 단위로 묶어 주는 오프라인 우선 작업 메모리(<code>github.com/jephyrus-svg/subbrain</code>)입니다. 에이전트에는 읽기 전용 MCP로 4단계 목차(<code>toc_index</code>→<code>toc_conversation_excerpt</code>)를 제공해, 전체 대화(약 22k 토큰) 대신 필요한 맥락(약 1.8k 토큰)만 꺼내 쓸 수 있습니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> 여러 AI 서비스를 오가다 작업 맥락을 잃어버릴 때 클라우드 종속 없이 내 PC에 통합 메모리를 구축하고, 계층형 목차 MCP로 토큰 낭비를 줄이는 설계 패턴으로 참고합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#03</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37955" target="_blank" rel="noopener">Show GN: IdeaPulse - 아이디어 한 줄과 가장 큰 고민을 고르면 다음 한 걸음을 알려 주는 도구</a>
+      <span class="hn-tag">news.hada.io · 프로덕트 검증 / 9가지 창업 고민 키트·서버 검증 수요 반응 링크</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> 올해 HN Ask에 올라온 창업자 고민 글 100개 중 35개가 “필요한 사람이 있을까”(21개)와 “첫 고객을 어디서 찾지”(14개)였다는 관찰에서 출발해, 아이디어 한 줄과 9가지 고민×4단계 위치를 고르면 당장 실행할 행동 1개와 질문 키트를 제시해 주는 도구입니다. 커뮤니티 공유 시 조작 불가능한 서버 집계 기반 “나도 이 불편 겪어요” 반응과 의견·가격·알림을 수집할 수 있습니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> 사이드 프로젝트를 코딩하기 전 실제 문제를 겪는 잠재 사용자에게 가벼운 원클릭 공감 링크를 돌려 초기 수요 신호와 인터뷰 질문을 구조화하는 데 활용합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#04</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37676" target="_blank" rel="noopener">Words - AI 응답을 실시간으로 표시하는 고속 Markdown 렌더러</a>
+      <span class="hn-tag">news.hada.io · 프런트엔드 / WebAssembly Text 기반 스트리밍 마크다운 엔진</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> OpenAI가 인수 예정인 Pierre Computer Company가 Apache-2.0으로 공개한 고속 스트리밍 마크다운 렌더러입니다. WebAssembly Text(WAT)로 작성된 코어가 아직 닫히지 않은 강조·코드·링크 문법과 CJK 강조, TeX SVG 수식, 구문 강조, 인라인 React 컴포넌트 상태까지 유지한 채 HTML이나 터미널 ANSI로 출력하며, 기본 React 렌더러 gzip 크기가 Streamdown보다 65% 작습니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> LLM 스트리밍 채팅 UI나 터미널 에이전트 뷰에서 토큰이 한 글자씩 들어올 때마다 화면이 깜빡이거나 마크다운 구문이 깨지는 문제를 경량 WASM 렌더러로 해결합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#05</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37600" target="_blank" rel="noopener">UI SDK - AI 에이전트가 UI의 기본 동작을 조합해 컴포넌트를 만드는 라이브러리</a>
+      <span class="hn-tag">news.hada.io · UI 아키텍처 / Vercel Labs 헤드리스 동작 프리미티브·WebMCP 브리지</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> Vercel Labs가 공개한 Apache-2.0 TypeScript 라이브러리로, 완성된 컴포넌트를 복사하는 shadcn/ui나 스타일 없는 컴포넌트를 조합하는 Radix UI보다 더 작은 50여 개 기본 동작(팝업 열기, 키보드 탐색, 포커스 관리, 드래그 앤 드롭 등)을 조합해 React·Vue·Svelte·Solid·Web Components용 맞춤형 접근성 UI를 만듭니다. 에이전트 스킬과 WebMCP 연동 브리지를 통해 AI가 직접 상태를 읽고 동작을 호출할 수도 있습니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> 코딩 에이전트에게 UI 구현을 맡길 때 매번 키보드 접근성과 포커스 트랩이 망가지는 문제를 막고, 향후 브라우저 내 AI 에이전트가 앱 UI를 직접 조작하는 WebMCP 통합을 준비할 때 검토합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#06</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37609" target="_blank" rel="noopener">결재 서류를 쌓아 두던 부장에서 보고받는 사장으로 – Claude Code 매니저 세션 만들기</a>
+      <span class="hn-tag">news.hada.io · 에이전트 운영 / 전결·결재 체계와 무토큰 스크립트 감시 패턴</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> 여러 Claude Code 워커 세션을 동시에 돌릴 때 사용자가 모든 중간 보고를 일일이 읽어야 하는 병목을 풀기 위해, 별도 폴더에 쓰기 권한을 막은 ‘매니저 세션’을 두고 워커의 응답을 전결·사후 보고·판단 결재·직접 지시 4단계로 분류한 실전 구축기입니다. 감시는 2초마다 상태 파일(<code>busy</code>/<code>idle</code>)을 읽는 스크립트가 맡아 대기 중 토큰 소모를 0으로 억제하며, 40분 실전 테스트 끝에 매니저 프롬프트의 핵심은 “무엇을 말하지 말지”를 정하는 것임을 확인했습니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> 멀티 에이전트를 병렬 운영할 때 인간의 주의력 고갈(alert fatigue)을 줄이기 위해, 감시 스크립트 기반 웨이크업과 명확한 권한 위임·차단 규칙을 설계하는 레퍼런스로 적용합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#07</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37647" target="_blank" rel="noopener">AI 에이전트는 적힌 것을 지킨다</a>
+      <span class="hn-tag">news.hada.io · 에이전트 엔지니어링 / 26회 실험으로 본 코드 냄새 지침과 숨겨진 테스트 괴리</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> AI 에이전트로 제품을 개발하며 실제 커밋 관찰 10회와 격리 조건 실험 16회를 수행한 결과, 작업을 잘게 쪼개거나 리뷰 횟수를 늘려도 줄지 않던 코드 냄새 지표가 ‘피해야 할 코드 냄새 24종의 이름과 정의’를 구현 지침에 명시하자 12.6에서 0.0~0.2로 급감했습니다. 반면 에이전트가 매 단계 완료를 보고하는 동안 외부에 숨겨 둔 검증 테스트의 통과율은 94%에서 74%로 떨어져, 완료 기준의 독립적 검증 필요성을 부각했습니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> <code>AGENTS.md</code>나 스킬 지침에 추상적 미사여구 대신 금지할 안티패턴의 정확한 이름과 정의를 적고, 에이전트가 손대지 못하는 독립 테스트 스위트로 최종 게이트를 분리합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#08</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37800" target="_blank" rel="noopener">MailFlow - 여러 이메일 계정을 한곳에서 관리하는 셀프호스팅 웹메일</a>
+      <span class="hn-tag">news.hada.io · 셀프호스팅 / GTD·로컬 AI 요약·한국어 UI 지원 통합 웹메일</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> Gmail·iCloud·Outlook·IMAP 계정을 하나의 받은편지함으로 묶어 통합 검색, 스레드 묶기, 뉴스레터 자동 분류 및 구독 해제, 예약 발송, GTD 방식 IMAP 폴더 정리, Todoist·CardDAV 연동을 제공하는 AGPL-3.0 셀프호스팅 웹메일(<code>github.com/maathimself/mailflow</code>)입니다. 한국어 UI와 PWA 푸시 알림, 2FA/OIDC를 지원하며 OpenAI 호환 API 또는 로컬 LLM으로 메일 요약·답장 초안을 작성합니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> 개인·팀 도메인과 여러 상용 메일 계정을 하나의 Docker Compose 기반 통합 메일함으로 모으면서 사내 로컬 LLM과 연결해 메일 트리아지를 자동화할 때 도입합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#09</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37742" target="_blank" rel="noopener">Pine - 파일과 메시지, 기기 변화에 반응해 작업하는 AI 에이전트 하네스</a>
+      <span class="hn-tag">news.hada.io · 에이전트 하네스 / 이벤트 트리거·MQTT·/goal·/swarm 지원 실행 환경</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> 새 파일 유입, 이메일, Slack·Telegram 메시지, 웹훅, RSS, MQTT 센서 변화 등 이벤트가 발생할 때마다 에이전트가 깨어나 작업을 수행하는 MIT 실행 환경(<code>github.com/pmndre/pine</code>)입니다. 터미널을 닫아도 백그라운드에서 대기하며 브라우저·macOS 앱 직접 제어, <code>/goal</code>·<code>/swarm</code>·<code>/undo</code>(Git diff 롤백), Claude/ChatGPT 구독 및 llama.cpp·vLLM 로컬 모델 연결을 지원합니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> 수동 프롬프트 입력 없이 스캔 문서 폴더 감시, 스마트홈 센서 알림 대응, 메일·메신저 수신 후 자동 분류를 처리하는 상주형 개인 자동화 허브로 시험합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#10</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37621" target="_blank" rel="noopener">사내 설치형 Git 서버·CI/CD 비교 – GitLab·Gitea·OneDev·GitHub Enterprise Server</a>
+      <span class="hn-tag">news.hada.io · 인프라 선택 / 폐쇄망·온프레미스 Git 무료판 기능 경계 실측 비교</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> 외부 클라우드 반출이 불가능한 사내 환경에 Git과 CI/CD를 직접 구축하기 위해 GitLab, Gitea, OneDev, GitHub Enterprise Server의 무료판 경계와 하드웨어 요구사양을 공식 문서 기준으로 비교한 글입니다. GitLab 무료판은 다중 리뷰 승인 강제와 그룹-권한 동기화가 Premium($29/월)에 잠겨 있는 반면 Gitea·OneDev는 무료 제공하며, 결국 “승인 강제·그룹 동기화 무료 여부”와 “OIDC vs SAML 인증”이 선택을 가른다고 정리했습니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> 사내 폐쇄망이나 보안 컴플라이언스 환경에서 자체 Git·CI/CD 스택을 선정할 때 초기 구축 후 유료 라이선스 장벽에 부딪히지 않도록 기능 매트릭스를 사전 검증하는 데 활용합니다.</p>
+    </div>
+  </div>
+</div>
+
+<h2 class="section-heading">3. 최신 논문 (AI · 신경과학 — 제목·초록 기반 리스트업)</h2>
+<div class="hn-list">
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#01</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.30025" target="_blank" rel="noopener">Damped Atomic Wave Integration Neurons (DAWIN): A Universal Primitive for Continuous-Time Spatiotemporal Learning</a>
+      <span class="hn-tag">[AI · HF Daily Papers]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 공간 투영과 경과 시간 의존 파동 여기를 닫힌 형식의 감쇠 복소 상태 진화로 결합해 수치 ODE 솔버 없이 불규칙 시공간 데이터를 다루는 연속 시간 뉴런 프리미티브 DAWIN과 O(log L) 병렬 Triton 스캔 구현체 DAWINLinear를 제안했습니다. 11개 과제 중 Neural CDE 9개·ReLU-MLP 8개를 앞섰으며, B200 GPU에서 직렬 대비 추론 최대 2,630배 가속 및 Mamba 대비 최대 GPU 메모리 97.6% 절감을 달성했습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#02</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.27112" target="_blank" rel="noopener">Markdown Is Not a Firewall: four coding agents, one rules file, four boundaries</a>
+      <span class="hn-tag">[AI · HF Daily Papers]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 278단어짜리 저장소 규칙 마크다운 파일을 두고 Claude Code·Codex CLI·Gemini CLI·OpenCode(DeepSeek) 4개 코딩 에이전트를 4가지 경계(차단 엔드포인트, 파괴적 우회, 심어둔 지시, 심어둔 패키지)가 있는 저장소에서 실험했습니다. 규칙 파일은 오히려 Codex CLI의 숨겨진 테스트 통과율을 99.0%에서 67.7%로 떨어뜨렸으며, 실제 경계 침범을 막는 것은 규칙 문서라는 조언이 아니라 외부 게이트(gate)임이 확인됐습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#03</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.30483" target="_blank" rel="noopener">When an AI agent makes a mistake in a database, what decides the damage?</a>
+      <span class="hn-tag">[AI · HF Daily Papers]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> AI 에이전트가 DB에 잘못된 명령을 실행했을 때 피해 규모를 결정하는 요인이 모델인지, 앞단 가드인지, DB 엔진 자체인지 규명하기 위해 22가지 대표 실수 스크립트(874회 복구 훈련)와 9개 엔진 대상 소형 오픈 에이전트 실험(9,468회+2,916회)을 사전 등록 연구로 수행했습니다. 기본 설정 상태에서 엔진 간 차이는 실수가 무엇을 파괴하느냐보다 복구(undo)를 얼마나 허용하느냐에서 크게 갈렸습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#04</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.30494" target="_blank" rel="noopener">Revisiting LLMs as Context Engineers</a>
+      <span class="hn-tag">[AI · HF Daily Papers]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 오프라인 시행착오로부터 LLM 스스로 일반화 가능한 지침·경험을 뽑아내는 LLM 컨텍스트 엔지니어링(LCE) 기법들을 다양한 추론 패턴 벤치마크에서 비교했습니다. 모든 과제를 이기는 단일 LCE는 없었고 단순 CoT를 일관되게 넘지도 못했으며, LCE 성능 향상은 실패 궤적의 다양성과 유의한 음의 상관(r=-0.5)을 보여 다양한 실패 모드에서 원칙적 컨텍스트를 추상화하는 병목을 드러냈습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#05</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.28231" target="_blank" rel="noopener">Evaluating Memanto on DolphinBench for AI Agents</a>
+      <span class="hn-tag">[AI · HF Daily Papers]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 질의응답 형태가 아니라 “팀 채널에 업데이트 올려줘”처럼 이전 맥락에서 필요한 정보를 스스로 추론해야 하는 600개 직장 업무 벤치마크 DolphinBench에서 정보이론적 관련도 점수로 메모리를 순위화하는 Memanto를 평가했습니다. Hermes 하네스·GPT-6-Luna·최대 6턴 제한에서 503건(83.83%)을 완료해 Mem0 기준선(424건, 70.67%, 최대 60턴)을 앞섰고 총비용(10.86 vs 61.48)과 중앙 지연시간(15.32초)도 최저를 기록했습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#06</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.20844" target="_blank" rel="noopener">DetourBench: Trajectory-Level Evaluation of Interactive Agents with Exact Minimum-Action Bounds</a>
+      <span class="hn-tag">[AI · HF Daily Papers]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 최종 성공 여부만 채점하는 기존 에이전트 평가의 한계를 넘기 위해, 전수 탐색으로 완전 정보 기준 최소 행동 수 L_0와 잔여 작업량 R_T를 정확히 계산할 수 있는 유한 부분관측 전이 시스템 벤치마크 DetourBench를 공개했습니다. 5개 모델 엔드포인트(375개 에피소드) 평가 결과 성공률(58.7~96.0%)과 조건부 달성도(0.803~0.890)의 모델 순위가 달라졌으며, 단 한 걸음 부족한 실패와 낭비적 배회·돌이킬 수 없는 오판이 명확히 분리됐습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#07</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.21155" target="_blank" rel="noopener">Edit Recommendation: Can LLMs Anticipate Edit Requests from Users, and When?</a>
+      <span class="hn-tag">[AI · HF Daily Papers]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> LLM이 결과물을 생성한 뒤 사용자가 보낼 다음 수정 요청을 사전에 예측해 제안하는 ‘편집 추천(Edit Recommendation)’ 과제를 공식화하고 WildChat-4.8M 실대화 로그 기반 EditRecBench를 구축했습니다. 예측 자체가 본질적으로 어려운 사례를 걸러 내는 의사결정 모델 기반 게이팅을 도입한 결과, 실제 사용자에게 노출된 추천의 pass@5를 12~25점 끌어올렸습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#08</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.34782" target="_blank" rel="noopener">Generation as Reverse Encoding</a>
+      <span class="hn-tag">[AI · HF Daily Papers]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 사전학습 비전 인코더의 중간 표현을 역순 생성 타깃으로 삼아 깊은 의미 표현→얕은 외형·공간 표현→픽셀 순으로 복원하는 RevFlow와 단계 간 가중치를 공유하는 HyC-DiT를 제안했습니다. ImageNet 256×256에서 단 5에포크 학습만으로 690M 1.96 FID·1.55B 1.74 FID를 달성했고, 짧은 적응 후 단계당 단일 샘플링 스텝으로 2.85 FID를 기록했습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#09</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.34938" target="_blank" rel="noopener">Tokenisation is not in APX</a>
+      <span class="hn-tag">[AI · arXiv cs.CL]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> P=NP가 성립하지 않는 한 직접(direct) 및 상향식(bottom-up) 토크나이저 학습에서 압축률 또는 유니그램 로그우도 목적함수를 상수 인자(constant factor) 이내로 근사하는 다항시간 알고리즘조차 존재하지 않아, 토크나이제이션이 APX 복잡도 클래스에 속하지 않음을 증명했습니다. 나아가 단일 문자(unary) 알파벳에서도 직접 토크나이제이션은 APX-hard여서 다항시간 근사 스킴(PTAS)을 허용하지 않음을 보였습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#10</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.34934" target="_blank" rel="noopener">Attack Policy Selection can Mislead Monitor Evaluators</a>
+      <span class="hn-tag">[AI · arXiv cs.LG]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 위험한 에이전트 행동을 탐지하는 AI 모니터(GPT-5.4)를 프록시 공격 정책의 트랜스크립트로 평가한 결과, 동일 공격 기법(강화학습) 내 최적화 강도에 따라 위음성률이 0.5%에서 20.8%까지, 기법 선택에 따라 6.4%에서 23.0%까지 크게 요동쳤습니다. 기초적인 공격 프록시만 쓴 평가가 모니터 성능을 과신하게 만들 수 있으며, 배포 타당성 논증 없이는 프록시 아티팩트가 평가를 왜곡함을 보였습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#11</span>
+      <a class="hn-link" href="https://www.biorxiv.org/content/10.64898/2026.11.13.766486v1" target="_blank" rel="noopener">A digital twin of freely moving mouse V1 learns a general visual code bridging classical physiology and active vision</a>
+      <span class="hn-tag">[신경과학 · bioRxiv]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 자유롭게 움직이는 생쥐의 망막 중심 영상과 보행·동공·안구·머리 움직임 데이터로 1차 시각피질(V1) 발화를 예측하는 멀티모달 디지털 트윈을 학습해, 별도 파라미터 자극 라벨 없이도 방위·공간주파수·대비 조율 및 흥분/억제 세포 차이를 복원했습니다. 고정 자세 자연 영화 데이터셋의 표상 기하를 실제 개체 간 일치도 수준으로 재현했으며, 보행은 동공 확장과 별개로 고공간주파수 민감도를 이동시킴을 규명했습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#12</span>
+      <a class="hn-link" href="https://www.biorxiv.org/content/10.64898/2026.11.14.765964v1" target="_blank" rel="noopener">Structure learning and context inference emerge from next-state prediction in a cerebellar-medial temporal lobe circuit</a>
+      <span class="hn-tag">[신경과학 · bioRxiv]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 내측두엽(MTL)의 잠재 맥락 변수를 조건으로 소뇌 순방향 모델이 다음 상태를 예측하고, MTL이 소뇌의 예측 오차로 그 잠재 변수를 갱신하는 소뇌-MTL 회로를 제안했습니다. 다음 상태 예측만으로 학습시켰음에도 구조화된 맥락 추론, 세척 후 재학습 가속(savings), 미경험 섭동 보상 및 어둠 속 장소세포 안정성 상실 등 해마·운동학습 현상을 동시에 재현했습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#13</span>
+      <a class="hn-link" href="https://www.biorxiv.org/content/10.64898/2026.11.13.766497v1" target="_blank" rel="noopener">NeuroMASS v4: Geometry-Aware Neural Population Dynamics via Learnable Hyperbolic Latent Representations and Biologically-Calibrated Diagonal State Space Models</a>
+      <span class="hn-tag">[신경과학 · bioRxiv]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 대각 상태공간모델(S4D, 2~200Hz 로그 균일 주파수 초기화)과 학습 가능한 곡률 c를 지닌 푸앵카레 공 쌍곡 잠재 투영을 결합해 세포외 스파이크 열을 모델링하는 NeuroMASS v4를 제안했습니다. 붉은털원숭이 4개 NLB 데이터셋에서 학습된 곡률 c가 링 다양체 운동피질 회로에서는 유의한 양수, 비구조화 전두엽 회로에서는 0에 가깝게 수렴해 회로 위상을 정량 지표로 포착했습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#14</span>
+      <a class="hn-link" href="https://www.biorxiv.org/content/10.64898/2026.11.11.765847v2" target="_blank" rel="noopener">Selective ultrasonic suppression of pathological brain hyperactivity via an endogenous CAV3-NCX1 axis</a>
+      <span class="hn-tag">[신경과학 · bioRxiv]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 초음파 자극이 기저 활동 세포는 건드리지 않고 병적 과흥분 뉴런과 성상세포만 선택적으로 억제하는 분자 기전으로 CAV3–NCX1 복합체를 규명했습니다. 저강도 지속 초음파는 과흥분 세포에서 NCX1 매개 Ca2+ 배출을 활성화하며, 생체 내 공포 과흥분·신경병성 통증·해마 뇌전증파를 NCX1 의존적으로 억제해 상태 의존적 신경조절 치료 표적을 제시했습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#15</span>
+      <a class="hn-link" href="https://pubmed.ncbi.nlm.nih.gov/42919967/" target="_blank" rel="noopener">Interneurons and network activity in the cerebral cortex: a developmental dialogue.</a>
+      <span class="hn-tag">[신경과학 · PubMed · Nat Rev Neurosci]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 포유류 대뇌피질의 출생 후 초기 발달에서 신경 활동이 개재뉴런의 전사·형태·연결을 지시하는 일방향 모델과 달리, 서로 다른 성숙 일정을 지닌 피질 개재뉴런 아형들이 간극연접 동기화→시냅스 폭발→성숙한 희소 발화로 이어지는 네트워크 동역학 전이를 능동적으로 설계하는 양방향 대화를 리뷰했습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#16</span>
+      <a class="hn-link" href="https://pubmed.ncbi.nlm.nih.gov/42844420/" target="_blank" rel="noopener">Sensing the skeleton: sensorineural regulation in bone.</a>
+      <span class="hn-tag">[신경과학 · PubMed · Nat Rev Neurosci]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 뼈를 수동적 지지대가 아니라 기계적·면역·대사 자극을 감지하는 고밀도 신경 분포 장기로 재정의하는 ‘골격 신경과학(skeletal neuroscience)’ 최신 근거를 정리했습니다. 전조직 투명화·단일세포 전사체로 규명된 체성감각 뉴런-골 미세환경 상호작용과 골 발육·복구 및 관절염·골통증에서 NGF–TrkA 신호의 양면성을 고찰했습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#17</span>
+      <a class="hn-link" href="https://pubmed.ncbi.nlm.nih.gov/42833352/" target="_blank" rel="noopener">Frontal aperiodic activity and sensorimotor theta clustering are differentially modulated by tDCS during proprioceptive training in Parkinson's disease: An EEG study.</a>
+      <span class="hn-tag">[신경과학 · PubMed · Neuroscience]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 경·중등도 파킨슨병 환자 24명에게 2주간 고유수용성 훈련과 보조운동영역 양극 tDCS(2mA) 또는 가짜 자극을 병행해 휴지기 뇌파를 분석했습니다. 가짜 자극군에서는 전두엽 LZC 복잡도가 108% 급증하고 비주기 지수가 평탄화된 반면, 활성 tDCS군은 전두엽 비주기 활동과 중심엽 세타 군집화를 안정적으로 유지해 보상적 과부하를 줄이고 자동적 감각운동 제어를 촉진함을 시사했습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#18</span>
+      <a class="hn-link" href="https://pubmed.ncbi.nlm.nih.gov/42833350/" target="_blank" rel="noopener">When channelrhodopsin goes off-target: biophysical signatures of ectopic expression in neurons.</a>
+      <span class="hn-tag">[신경과학 · PubMed · Neuroscience]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> VGLUT1-Cre::ChR2(H134R)-eYFP 계통 마우스 세대 교배 과정에서 흑질 도파민(DA) 뉴런에 의도치 않은 이소성(ectopic) ChR2 발현이 유입되어 청색광 직후 약 200μs 지연의 즉각 광전류와 AMPA 시냅스 전류가 뒤섞이는 현상을 포착했습니다. 이소성 ChR2 전류는 피질 추체세포 대비 진폭이 작고 감쇠가 빠른 특이 생물물리 지표를 보여, Cre-lox 광유전학 실험의 발현 충실도 검증 필요성을 경고했습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#19</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.34169" target="_blank" rel="noopener">Multi-view fnirs identifies neurophysiological subtypes in post-stroke aphasia</a>
+      <span class="hn-tag">[신경과학 · arXiv q-bio.NC]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 뇌졸중 후 실어증 환자 79명의 휴지기 활동·연결성, 언어 과제 활성화, 휴지-과제 재구성 3종 fNIRS 특징을 유사도 네트워크 융합·스펙트럼 군집화로 분석해 통계적으로 유의한 3개 신경생리 아형(조정 p=0.001)을 도출했습니다. 이 군집은 휴지기 내재 활동과 연결성에서 뚜렷이 갈렸으나 기존 임상 실어증 분류나 초기 언어 점수와는 유의하게 겹치지 않아 보완적 바이오마커 가능성을 보였습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#20</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.29886" target="_blank" rel="noopener">Active sensing as control over sensory acquisition</a>
+      <span class="hn-tag">[신경과학 · arXiv q-bio.NC]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 신경과학과 공학 전반에 혼재된 ‘능동 감각(active sensing)’ 개념을 감각 획득에 대한 제어 관점으로 통합해, 감각 입력을 물리적으로 구조화하는 기전적 제어·주의와 적응을 통한 폐루프 전략적 제어·감각 정책을 선택하는 에이전트적 제어의 3가지 상호작용 축으로 정식화했습니다. 생물·공학·하이브리드 감각 시스템에서 무엇을, 어떻게, 누가 제어하는지 비교하는 공통 분석 틀을 제공합니다.</p>
+    </div>
+  </div>
+</div>
+
+<h2 class="section-heading">4. 최근 30일 커뮤니티 발굴 · 참신한 사이드 프로젝트 (Reddit · HN)</h2>
+<div class="hn-list">
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#01</span>
+      <a class="hn-link" href="https://news.ycombinator.com/item?id=50667726" target="_blank" rel="noopener">bouncemarket — 떨어지는 공의 착지 위치를 실시간으로 거래하는 예측 시장 게임</a>
+      <span class="hn-tag">[HN]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 공이 떨어져 어느 구역(Left/Right 등)에 착지할지 라운드마다 실시간 호가로 거래하는 예측 시장 웹 게임(<code>bouncemarket.minhanhday.com</code>)입니다. 서버 측에서 초기 위치 기반 결정론적 물리 시뮬레이션을 돌려 SSE로 스트리밍하며, 접속자가 5명 이하일 때는 단순 규칙 기반 AI 트레이더들이 시장 유동성을 채워 주다가 플레이어가 모이면 퇴장하는 구조로 설계됐습니다.</p>
+      <p class="hn-use"><strong>커뮤니티 반응 및 활용:</strong> 316포인트·106댓글을 기록하며 “기발하고 중독성 넘친다”, “처음 2~3라운드는 UI 파악하느라 돈을 날리니 튜토리얼 라운드가 있으면 좋겠다”는 호평과 함께 사용자들의 수익 자랑 댓글이 이어졌습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#02</span>
+      <a class="hn-link" href="https://news.ycombinator.com/item?id=50491545" target="_blank" rel="noopener">Grounds.top — FAA 미 전역 항공기 지상 정지 사태 당일 밤 30분 만에 띄운 실시간 비행 지도</a>
+      <span class="hn-tag">[HN]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 지난 11월 13일 밤 미국 연방항공청(FAA)의 관제센터 간 통신·레이더 장애로 미 전역 항공편 지상 정지(ground stop)가 내려진 직후, 제작자가 9/11 당시 항공편 GIF를 떠올려 공개 ADS-B 데이터로 실시간 항공기 지도를 Claude Code와 함께 약 30분 만에 구축·배포한 프로젝트(<code>grounds.top</code>)입니다.</p>
+      <p class="hn-use"><strong>커뮤니티 반응 및 활용:</strong> 220포인트·27댓글에서 “13일의 금요일에 정작 FAA 레이더가 멈췄는데 비행기들이 직접 쏘는 ADS-B와 수백 명의 취미가 수신기가 전체 그림을 살려냈다는 점이 아이러니하다”, “사건 발생과 동시에 도메인 전파 시간 만에 만들어 낸 놀라운 출시 속도”라는 반응을 얻었습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#03</span>
+      <a class="hn-link" href="https://news.ycombinator.com/item?id=50532385" target="_blank" rel="noopener">Alloy CSS — JavaScript를 꺼도 네이티브 HTML·CSS만으로 동작하는 모달·메뉴·탭</a>
+      <span class="hn-tag">[HN]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 서버 사이드 렌더링 앱마다 드롭다운이나 모달 하나 때문에 JS 라이브러리를 얹던 관행에서 벗어나기 위해, 최신 브라우저 표준인 <code>&lt;dialog&gt;</code>, <code>commandfor</code>, <code>popover</code>, <code>:has()</code>만 조합해 JS 없이도 모달·메뉴·탭이 작동하게 만든 단일 스타일시트(<code>alloyhtml.com/example.html</code>)입니다.</p>
+      <p class="hn-use"><strong>커뮤니티 반응 및 활용:</strong> 211포인트·40댓글에서 클라이언트 JS 없는 미니멀 웹의 영속성과 안정성에 공감하는 의견과 함께, 접근성 세부 보완 및 기존 프로젝트와의 클래스명 충돌을 피할 CSS 프리픽스 빌더 요청이 논의됐습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#04</span>
+      <a class="hn-link" href="https://news.ycombinator.com/item?id=50454625" target="_blank" rel="noopener">Yogurt — 회의 봇 참여 없이 온디바이스 AI로 녹취·요약하는 무료 오픈소스 Granola 대안</a>
+      <span class="hn-tag">[HN]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 상용 AI 회의록 서비스 Granola처럼 화상회의에 봇으로 들어가지 않고 백그라운드에서 조용히 오디오를 받아 적되, <code>whisper.cpp</code>와 <code>llama.cpp</code> 등 온디바이스 오픈 웨이트 모델만으로 녹취·요약·질의응답을 처리해 데이터가 외부로 나가지 않는 MIT 데스크톱 앱(<code>github.com/FrigadeHQ/yogurt</code>)입니다.</p>
+      <p class="hn-use"><strong>커뮤니티 반응 및 활용:</strong> 308포인트를 기록하며 “오랫동안 기다려 온 완벽한 프라이버시 로컬 대안”이라는 환영과 함께 GPUI·Rune 같은 경량 크로스플랫폼 네이티브 툴킷으로 포팅하면 어떻겠냐는 기술 제안이 오갔습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#05</span>
+      <a class="hn-link" href="https://news.ycombinator.com/item?id=50441518" target="_blank" rel="noopener">Tiny Valencia — 스페인 발렌시아 도심을 심시티 스타일 아이소메트릭 뷰로 구현한 웹 지도</a>
+      <span class="hn-tag">[HN]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 스페인 발렌시아 실제 도시 건물과 지형을 고전 심시티(SimCity) 감성의 아이소메트릭(isometric) 3D 픽셀·미니어처 뷰로 렌더링해 브라우저에서 자유롭게 줌·탐험할 수 있도록 만든 인터랙티브 웹 지도 프로젝트(<code>tinyvalencia.com</code>)입니다.</p>
+      <p class="hn-use"><strong>커뮤니티 반응 및 활용:</strong> 262포인트·63댓글에서 “일반 평면 지도의 추상성과 스트리트뷰의 과도한 현실감 사이를 메워 주는 매력적인 도시 탐험 방식”이라는 찬사와 함께 북쪽 고정 옵션 및 유사 아이소메트릭 도시 아카이브 아이디어가 공유됐습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#06</span>
+      <a class="hn-link" href="https://www.reddit.com/r/SideProject/comments/1xqgbm1/i_built_an_opensource_app_that_turns_claude_codex/" target="_blank" rel="noopener">kywai — Claude Code·Codex·Gemini·Ollama를 한 팀으로 묶어 3D 작업 공간에서 조율하는 오픈소스 앱</a>
+      <span class="hn-tag">[Reddit]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> <code>r/SideProject</code>에서 공개된 MIT 오픈소스 데스크톱 앱(<code>kywai.app</code>)으로, 코디네이터 모델이 계획을 세우면 Claude Code, Codex CLI, Gemini CLI, Ollama/LM Studio 로컬 모델이 프로젝트 폴더 안에서 각자 CLI 도구를 사용해 병렬 작업과 교차 코드 리뷰를 수행하며, Git 기반 diff·되돌리기와 실시간 3D 에이전트 활동 뷰를 제공합니다.</p>
+      <p class="hn-use"><strong>커뮤니티 반응 및 활용:</strong> 여러 구독형 CLI와 로컬 모델을 동시에 굴리면서 시각적으로 작업 진행도와 파일 변경 이력을 통제하려는 인디 개발자들 사이에서 실용적인 멀티 에이전트 데스크톱 워크스페이스로 주목받았습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#07</span>
+      <a class="hn-link" href="https://www.reddit.com/r/selfhosted/comments/1xv23ei/opengolive_098_selfhosted_html_reports_with/" target="_blank" rel="noopener">OpenGoLive — SQLite·로컬 파일만으로 HTML 리포트·대시보드를 동일 URL·롤백과 함께 호스팅</a>
+      <span class="hn-tag">[Reddit]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> <code>r/selfhosted</code>에서 v0.9.8 공개로 주목받은 MIT 라이선스 Python 도구(<code>html-golive</code>)로, 외부 DB나 클라우드 계정 없이 단일 HTML 리포트나 대시보드를 고정 URL로 발행하고, 같은 URL에 새 버전을 덮어쓰거나 스냅샷 롤백·편집 충돌 검사·팀 그룹 권한·WebDAV 저장소 연동을 제공합니다.</p>
+      <p class="hn-use"><strong>커뮤니티 반응 및 활용:</strong> AI가 만들어 준 단일 HTML 리포트나 사내 분석 대시보드를 매번 파일명 버전으로 뿌리는 대신, 로컬 홈서버나 소규모 팀 인프라에 깔끔하게 발행·버전 관리하는 경량 퍼블리싱 도구로 호응을 얻었습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#08</span>
+      <a class="hn-link" href="https://www.reddit.com/r/selfhosted/comments/1y6e3xm/new_project_megathread_week_of_26_nov_2026/" target="_blank" rel="noopener">CarryCloud — 서랍 속 구형 Android 폰을 PHP 내장 개인 클라우드 서버로 바꾸는 오픈소스 앱</a>
+      <span class="hn-tag">[Reddit]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 11월 26일 주간 <code>r/selfhosted</code> 신규 프로젝트 스레드에 소개된 오픈소스 Android 앱으로, 쓰지 않는 구형 스마트폰에 PHP 실행 환경과 로컬 웹 서버를 구동해 VPS나 별도 NAS 장비를 빌리지 않고도 kodbox 같은 경량 파일 클라우드를 직접 호스팅할 수 있게 해줍니다.</p>
+      <p class="hn-use"><strong>커뮤니티 반응 및 활용:</strong> 저전력·배터리 내장(자연 UPS 역할)의 구형 스마트폰 하드웨어를 재활용해 소규모 개인 파일 서버나 로컬 PHP 테스트 서버를 24시간 운영하려는 셀프호스팅 입문자들에게 참신한 대안으로 관심을 끌었습니다.</p>
+    </div>
+  </div>
+</div>
