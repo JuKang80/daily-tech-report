@@ -1,0 +1,687 @@
+<h2 class="section-heading">1. GitHub Trending Top 20 저장소 (언어별 일간 트렌딩 10 + 최근 신규 급상승 10)</h2>
+<div class="hn-list">
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#01</span>
+      <a class="hn-link" href="https://github.com/pytorch/torchtitan" target="_blank" rel="noopener">pytorch/torchtitan</a>
+      <span class="hn-tag">Python · 언어 일간 트렌딩 · PyTorch 네이티브 대규모 생성 AI 사전학습·SFT·RL 통합 플랫폼</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> PyTorch 공식 팀이 공개한 BSD-3-Clause 대규모 모델 학습 플랫폼으로, 단일 가독성 높은 코드베이스 안에서 모델 재작성 없이 FSDP2·텐서(TP)·파이프라인(PP)·컨텍스트(CP)·전문가(EP) 병렬화를 N차원 <code>DeviceMesh</code>와 DTensor로 조합합니다. 사전학습부터 SFT, vLLM과 커널을 공유하는 TitanRL 강화학습, MXFP8/NVFP4 저정밀도 학습까지 지원합니다(누적 6,001 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> DeepSeek·Qwen·Llama·FLUX 같은 대규모 파운데이션 모델을 연구·학습할 때 분산 병렬화 전략과 사후학습(RL) 파이프라인을 한 레시피 체계로 실험하는 데 도입합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#02</span>
+      <a class="hn-link" href="https://github.com/vllm-project/vllm-ascend" target="_blank" rel="noopener">vllm-project/vllm-ascend</a>
+      <span class="hn-tag">Python · 언어 일간 트렌딩 · Huawei Ascend NPU용 vLLM 공식 하드웨어 플러그인</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> vLLM 추론 엔진을 Huawei Ascend NPU 하드웨어에서 네이티브로 구동할 수 있도록 커뮤니티가 유지관리하는 Apache-2.0 공식 하드웨어 플러그인입니다. vLLM 코어 코드 수정 없이 플러그인 인터페이스로 어텐션·양자화·분산 추론 백엔드를 결합할 수 있습니다(누적 3,161 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> NVIDIA GPU 외 이기종 AI 가속기(Ascend NPU) 클러스터에서 기존 vLLM API 호환 서빙과 OpenAI 호환 엔드포인트를 그대로 유지하며 LLM을 배포할 때 활용합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#03</span>
+      <a class="hn-link" href="https://github.com/agentscope-ai/agentscope" target="_blank" rel="noopener">agentscope-ai/agentscope</a>
+      <span class="hn-tag">Python · 언어 일간 트렌딩 · 실시간·음성·MCP를 지원하는 가시적 멀티에이전트 프레임워크</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 실행 흐름을 투명하게 관찰·이해·신뢰할 수 있는 에이전트 구축을 목표로 한 Apache-2.0 Python(3.11+) 멀티에이전트 프레임워크입니다. ReAct 에이전트, 실시간 음성·멀티모달 에이전트, MCP 도구 연동 및 분산 멀티에이전트 메시지 라우팅을 기본 제공합니다(누적 36,836 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 음성 인터랙션이나 다중 역할 에이전트가 협업하는 프로덕션 서비스를 구축하면서 각 에이전트의 도구 호출과 대화 상태를 추적·디버깅할 때 사용합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#04</span>
+      <a class="hn-link" href="https://github.com/NYLLON-SOFTWARE/SignuDoc" target="_blank" rel="noopener">NYLLON-SOFTWARE/SignuDoc</a>
+      <span class="hn-tag">TypeScript · 언어 일간 트렌딩 · 시트당 과금 $0 오픈소스 전자서명 플랫폼</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 사용자 수(seat)나 문서 봉투(envelope) 제한 없이 자체 Vercel·Neon Postgres·Resend 계정에 원클릭 배포하거나 셀프호스팅할 수 있는 MIT 전자서명 플랫폼입니다. PDF 업로드, 서명·입력 필드 배치, 서명 링크 발송, 감사 인증서(audit certificate)가 포함된 봉인 문서 보관까지 제공합니다(누적 3,613 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> DocuSign 같은 상용 전자서명 SaaS의 높은 인당 구독료 대신 스타트업이나 사내 팀이 무료 티어·자체 인프라 위에서 무제한 계약서 서명 워크플로우를 운영할 때 도입합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#05</span>
+      <a class="hn-link" href="https://github.com/visgl/deck.gl" target="_blank" rel="noopener">visgl/deck.gl</a>
+      <span class="hn-tag">TypeScript · 언어 일간 트렌딩 · WebGL2·WebGPU 기반 대용량 데이터·지리 시각화 엔진</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 수백만 건의 공간·정형 데이터를 GPU 가속으로 렌더링하는 MIT 시각화 프레임워크로, 아이콘·폴리곤·텍스트·포인트 클라우드 등 검증된 레이어 카탈로그와 지도·1인칭·직교 뷰를 조합할 수 있습니다. WebGL2 및 WebGPU를 지원하며 순수 JS, React, Python 바인딩을 모두 제공합니다(누적 14,833 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 대규모 차량 궤적, 위성·센서 텔레메트리, 실시간 도시 데이터 대시보드처럼 일반 SVG/Canvas 차트로 프레임이 떨어지는 브라우저 시각화에 적용합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#06</span>
+      <a class="hn-link" href="https://github.com/SaladDay/cc-switch-cli" target="_blank" rel="noopener">SaladDay/cc-switch-cli</a>
+      <span class="hn-tag">Rust · 언어 일간 트렌딩 · Claude·Codex·Gemini 등 모든 AI CLI 통합 전환 TUI/CLI</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 데스크톱 앱 CC-Switch의 Rust 기반 크로스플랫폼(Windows·macOS·Linux) CLI 포크로, Claude Code, Codex, Gemini, OpenCode, Hermes, OpenClaw, Pi의 프로바이더·모델·설정을 하나의 대화형 TUI 또는 스크립트 가능한 CLI에서 즉시 전환합니다. 기존 WebDAV 동기화 포맷과 100% 호환됩니다(누적 5,597 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> SSH 원격 서버나 헤드리스 터미널 환경에서 여러 AI 코딩 CLI의 API 엔드포인트·계정 프로필을 수동 설정 파일 편집 없이 빠르게 전환·동기화할 때 사용합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#07</span>
+      <a class="hn-link" href="https://github.com/louis-e/arnis" target="_blank" rel="noopener">louis-e/arnis</a>
+      <span class="hn-tag">Rust · 언어 일간 트렌딩 · OpenStreetMap 실제 도시·지형 고정밀 Minecraft 월드 생성기</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> OpenStreetMap의 도로·건물·수계 벡터 데이터와 실제 고도(elevation) 데이터를 Rust 알고리즘으로 고속 처리해 실제 도시와 자연 지형을 Minecraft(Java 1.21.4+·Bedrock)·Luanti·Hytale 월드로 구현하는 Apache-2.0 오픈소스 도구입니다. GUI 영역 선택, 축척 조정, 건물 내부 생성 옵션까지 지원합니다(누적 18,877 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 우리 동네나 캠퍼스, 도시 전체를 1:1에 가까운 블록 월드로 변환해 교육용 공간 탐험, 건축 시뮬레이션, 멀티플레이 이벤트 서버 맵을 자동 제작할 때 활용합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#08</span>
+      <a class="hn-link" href="https://github.com/agent-substrate/substrate" target="_blank" rel="noopener">agent-substrate/substrate</a>
+      <span class="hn-tag">Go · 언어 일간 트렌딩 · Kubernetes 기반 수백만 에이전트용 제로트러스트 샌드박싱 코어</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> CNCF/Kubernetes 생태계 위에서 대규모 AI 에이전트 워크로드를 제로트러스트 원칙으로 격리 실행하기 위해 설계된 Apache-2.0 Go 코어 시스템입니다. 에이전트가 생성·실행하는 신뢰할 수 없는 코드와 도구 호출을 엄격한 네트워크·권한 경계 안에 가둡니다(누적 8,542 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 다수의 자율 코딩·리서치 에이전트를 Kubernetes 클러스터에서 동시 구동하면서 테넌트 간 격리와 아웃바운드 네트워크 통제를 강제해야 할 때 인프라 기반으로 검토합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#09</span>
+      <a class="hn-link" href="https://github.com/gastownhall/beads" target="_blank" rel="noopener">gastownhall/beads</a>
+      <span class="hn-tag">Go · 언어 일간 트렌딩 · Dolt 기반 코딩 에이전트용 분산 그래프 장기 기억 트래커</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 버전 관리형 SQL DB인 Dolt를 백엔드로 삼아 코딩 에이전트에 영속적이고 구조화된 작업 기억(<code>bd</code> CLI)을 제공하는 MIT 도구입니다. 흩어지기 쉬운 마크다운 할 일 목록 대신 의존성 그래프로 선행·후행 작업을 관리하며 <code>bd dolt push/pull</code>로 여러 기기·에이전트 간 상태를 동기화합니다(누적 29,181 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> Claude Code·Codex·Cursor가 장기 프로젝트에서 컨텍스트 컴팩션 이후에도 의존성 순서와 블로커 해제 상태를 잃지 않고 작업을 이어가도록 프로젝트 메모리를 업그레이드합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#10</span>
+      <a class="hn-link" href="https://github.com/Autumn-27/ScopeSentry" target="_blank" rel="noopener">Autumn-27/ScopeSentry</a>
+      <span class="hn-tag">Go · 언어 일간 트렌딩 · 분산 노드 기반 자산 매핑·서브도메인·취약점 통합 스캐너</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> Go 스캐너와 FastAPI 서버, Vue 관리 UI, MongoDB/Redis 분산 큐로 구성된 오픈소스 공격 표면 관리·스캔 플랫폼입니다. 서브도메인 열거, 포트 스캔, 디렉터리 탐색, 민감정보 유출 탐지, 페이지 변경 모니터링을 여러 스캔 노드에 분산 실행하고 플러그인 마켓을 지원합니다(누적 2,728 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 새로운 CVE가 공개됐을 때 사내 외부 노출 자산과 서브도메인을 분산 노드로 신속하게 재스캔해 영향받는 컴포넌트를 조기 식별하는 보안 모니터링 파이프라인으로 활용합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#11</span>
+      <a class="hn-link" href="https://github.com/storytold/craft-anything" target="_blank" rel="noopener">storytold/craft-anything</a>
+      <span class="hn-tag">Rust · 신규 급상승(10/31 생성) · 모든 소프트웨어를 분석해 AI로 클린룸 재구현하는 Rust 엔진</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 웹사이트·앱·게임을 지정하면 실제 인스펙션 도구로 동작 원리를 관찰·분석한 뒤 코딩 에이전트가 새 프로젝트를 처음부터 구현하고 원본과 대조 검증·개선하는 순수 Rust 클린룸(clean-room) 엔진(Apache-2.0/MIT)입니다. macOS·Windows·Linux·FreeBSD·웹 네이티브를 지원합니다(누적 44,915 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 기존 SaaS나 유틸리티의 동작 명세를 체계적으로 역추적해 독자적인 오픈소스 클론이나 사내 맞춤형 도구를 클린룸 방식으로 빠르게 구축할 때 활용합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#12</span>
+      <a class="hn-link" href="https://github.com/deepseek-ai/dsh-superagent-prototype" target="_blank" rel="noopener">deepseek-ai/dsh-superagent-prototype</a>
+      <span class="hn-tag">TypeScript · 신규 급상승(10/31 생성) · GitHub·Feishu 이벤트에 자율 반응하는 DeepSeek 연구용 슈퍼에이전트</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> DeepSeek 팀이 사내 개발 실무에서 사용하며 공개한 MIT 연구용 프로토타입으로, GitHub·Feishu에서 권한 있는 요청이나 규칙에 맞는 이벤트가 들어오면 독립된 에이전트 세션과 디렉터리에서 작업을 처리해 PR로 응답하고 인간 확인이 필요한 일만 웹 패널에 띄웁니다(누적 24,762 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> “사람의 주의를 최소로 소모하고 최대 가치를 돌려준다”는 설계 철학과 권한·실행·패널 분리 문서를 참고해 팀 전용 비동기 PR 에이전트 아키텍처를 설계합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#13</span>
+      <a class="hn-link" href="https://github.com/Lee-xeo/Claude-Cage" target="_blank" rel="noopener">Lee-xeo/Claude-Cage</a>
+      <span class="hn-tag">Go · 신규 급상승(10/31 생성) · 네트워크 유출을 원천 차단하는 Claude 특화 경량 VM 격리 환경</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> Claude Code·Desktop의 셸 실행과 외부 웹·메일 접촉 위험을 분리하기 위해 Go로 만든 MIT 경량 로컬 VM 격리 환경 ‘Claude Cage’입니다. 에이전트를 네트워크가 통제된 가상환경 안에 가두고 표준 MCP 플러그인과 사용자 승인 경계를 통해서만 호스트 자원에 접근하도록 하며 다중 계정·모바일 제어를 지원합니다(누적 9,135 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 프롬프트 인젝션이나 악성 저장소 코드로 인한 로컬 SSH 키·환경변수 유출을 걱정하지 않고 자율 코딩 에이전트를 안전하게 격리 운영할 때 도입합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#14</span>
+      <a class="hn-link" href="https://github.com/huami1314/GestaltX" target="_blank" rel="noopener">huami1314/GestaltX</a>
+      <span class="hn-tag">Swift · 신규 급상승(11/09 생성) · 자동 백업·복원을 갖춘 iOS 27.x MobileGestalt 편집기</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> iOS/iPadOS 27.x 기기에서 Dynamic Island·AOD·Apple Intelligence·Stage Manager 등 기능 플래그와 지역 코드(<code>CacheExtra</code>)를 확인·수정할 수 있는 GPL-3.0 SwiftUI 앱입니다. 수정 전 자동 초기 백업, 쓰기 직전 스냅샷, 변경 전후 비교 검증 및 NeoSpring 리스프링을 제공합니다(누적 9,078 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> iOS 27 테스트 기기에서 지역별 기능 플래그 차이, 디바이스 프리셋 동작 및 MobileGestalt 파라미터 구조를 안전하게 백업·복원하며 분석할 때 참고합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#15</span>
+      <a class="hn-link" href="https://github.com/KKKKhazix/agent-autoloop" target="_blank" rel="noopener">KKKKhazix/agent-autoloop</a>
+      <span class="hn-tag">TypeScript · 신규 급상승(11/03 생성) · 평소엔 조용히 돌고 결정 필요 시만 카드를 보내는 CLI 에이전트 중계 허브</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> Node 24+ 기반의 제로 의존성 스케줄링 커널과 플러그인 구조로 Claude Code·Codex 등 기존 CLI 에이전트를 백그라운드에서 이벤트·크론(<code>rules.json</code>)에 따라 실행하는 MIT 자동화 허브입니다. 한 턴이 끝나면 프로세스를 종료해 유휴 토큰을 쓰지 않으며, 삭제·배포 등 판단이 필요할 때만 Slack·Discord·Feishu·데스크톱 알림 카드를 보냅니다(누적 6,744 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 터미널을 열어 두고 대기할 필요 없이 매일 아침 노트 정리, GitHub 이슈 초기 분석, 장애 로그 트리아지를 무인 자동화하고 핵심 승인만 메신저로 처리합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#16</span>
+      <a class="hn-link" href="https://github.com/XinaTian/MROffice" target="_blank" rel="noopener">XinaTian/MROffice</a>
+      <span class="hn-tag">TypeScript · 신규 급상승(11/10 생성) · Copilot·MCP 서버 내장 브라우저 기반 AI 오피스 스위트</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 브라우저에서 Word(<code>.docx</code>), Excel(<code>.xlsx</code>), PowerPoint(<code>.pptx</code>), PDF 및 코드를 직접 편집할 수 있는 AGPL-3.0 오픈소스 오피스 에디터 모음입니다. 각 에디터 내장 Copilot이 실제 오피스 문서를 함께 수정하며, MCP 서버와 1줄 임베딩 SDK(<code>mroffice-embed</code>)를 통해 Claude·ChatGPT·Cursor가 문서를 생성·편집할 수 있습니다(누적 5,301 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 사내 웹 애플리케이션에 문서·스프레드시트·프레젠테이션 편집기를 임베딩하고 AI 에이전트가 MCP를 통해 실제 MS Office 포맷 문서를 수정하게 할 때 도입합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#17</span>
+      <a class="hn-link" href="https://github.com/mromidev/claude-animated-shorts" target="_blank" rel="noopener">mromidev/claude-animated-shorts</a>
+      <span class="hn-tag">TypeScript · 신규 급상승(11/01 생성) · Three.js + Remotion으로 3D 세계 속 2D 숏폼 애니메이션을 만드는 Claude 스킬</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> AI 동영상 생성 모델 대신 로컬 PC에서 Three.js와 Remotion(<code>@remotion/three</code>), ffmpeg로 55~70초 세로형 스토리 애니메이션(잉크 윤곽선 2D 캐릭터·3D 배경·렌즈 블러·합성 효과음과 배경음악 믹싱)을 제작하는 MIT Claude Code 스킬입니다. 20편의 레퍼런스 분석 문서와 프레임 QA 스크립트까지 포함합니다(누적 5,260 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 생성형 비디오 특유의 깜빡임이나 일관성 붕괴 없이, 결정론적인 코드 기반 2K 숏폼 스토리·역사·테크 설명 영상을 Claude Code로 자동 렌더링할 때 활용합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#18</span>
+      <a class="hn-link" href="https://github.com/trustno1-coder/VIctory-NVIDIA" target="_blank" rel="noopener">trustno1-coder/VIctory-NVIDIA</a>
+      <span class="hn-tag">Rust · 신규 급상승(11/25 생성) · DLSS·프레임 생성(최대 6x)을 통합한 NVIDIA용 Xbox Series 호환 레이어</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> Xbox Series PC 호환 레이어(VIctory)를 NVIDIA RTX 그래픽카드에 맞춰 최적화한 GPL-3.0 Rust 프로젝트입니다. RTX 40/50용 DLSS 프레임 생성(RTX 50 최대 6x)과 RTX 20/30 및 기타 GPU용 AMD FSR 3 프레임 생성 자동 전환, F1 설정 메뉴·F3 통계 패널을 통합해 RTX 5070 1440p 기준 26~30fps 동작을 달성했습니다(누적 4,701 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 콘솔 RDNA2 셰이더의 DXIL 변환 파이프라인에 실시간 DLSS·FSR 3 업스케일링과 프레임 생성을 접목하는 그래픽스 호환 레이어 구현 사례로 분석합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#19</span>
+      <a class="hn-link" href="https://github.com/jhaizhou-ops/S2Arm" target="_blank" rel="noopener">jhaizhou-ops/S2Arm</a>
+      <span class="hn-tag">C# · 신규 급상승(11/08 생성) · 정적 재컴파일과 Metal 직결로 iPhone·Mac에서 구동하는 Switch 런타임</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 사용자가 보유한 Switch 게임 코드를 네이티브 ARM64로 재작성하고 그래픽 호출을 Apple Metal API로 직접 연결해 iPhone·iPad(iOS 18+)와 Apple Silicon Mac(macOS 15+)에서 실행하는 Apache-2.0 프로젝트입니다. v0.6.0부터 단일 라이브러리 앱 구조와 실시간 스냅샷 저장·복원을 지원합니다(누적 3,984 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> 정적 바이너리 재컴파일(static recompilation)과 Metal 그래픽스 변환·실행 상태 스냅샷 저장 아키텍처를 학습하는 오픈소스 레퍼런스로 살펴봅니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#20</span>
+      <a class="hn-link" href="https://github.com/Pixel679-cmyk/windows-titlebar-blur-customizer" target="_blank" rel="noopener">Pixel679-cmyk/windows-titlebar-blur-customizer</a>
+      <span class="hn-tag">C++ · 신규 급상승(11/26 생성) · Windows 10·11 타이틀바 Aero·Acrylic·Mica DWM 블러 커스터마이저</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> CLI 조작 없이 Windows Desktop Window Manager(DWM)의 타이틀바 렌더링을 Aero Glass, Acrylic, Mica, Mica Alt 및 사용자 지정 블러·투명도로 바꿀 수 있는 C++ 데스크톱 커스터마이징 도구입니다. 라이트·다크 테마 자동 분기와 창 제어 버튼 스타일 조정까지 지원합니다(누적 1,508 스타).</p>
+      <p class="hn-use"><strong>활용 방안:</strong> Windows 10/11 환경에서 DWM(<code>CustomBlur</code>/<code>AccentBlur</code>/<code>SystemBackdrop</code>) API를 활용해 전역 창 프레임과 타이틀바 투명도를 제어하는 기법을 참고할 때 활용합니다.</p>
+    </div>
+  </div>
+</div>
+
+<h2 class="section-heading">2. GeekNews (news.hada.io) 인기 소식</h2>
+<div class="hn-list">
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#01</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37995" target="_blank" rel="noopener">Show HN: DragDropMath - 직접 조작하며 감각으로 배우는 수학</a>
+      <span class="hn-tag">news.hada.io · 교육/인터랙션 / 대수 방정식 드래그·재배열 학습 도구</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> 방정식의 각 항을 마우스로 직접 드래그해 재배열하며 대수 연산 규칙을 체득하는 인터랙티브 웹 학습 도구입니다. 수학적으로 허용되는 이동만 물리적으로 허용하며, 항 재배열부터 시작해 주어진 목표 식에 맞추는 퍼즐을 Easy·Medium·Hard 난이도별로 풀어 나갑니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> 기호 암기 위주의 수식 학습을 제약 기반(constraint-based) 직접 조작 UI로 전환해 직관적 수식 감각을 기르는 에듀테크 인터페이스 설계 레퍼런스로 참고합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#02</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37994" target="_blank" rel="noopener">ShellBench - 실제 에이전트 사용 패턴으로 만든 업무형 에이전트 벤치마크</a>
+      <span class="hn-tag">news.hada.io · 에이전트 평가 / 1,000만 건 실사용 로그 기반 비정형 오피스 작업 벤치마크</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> OpenClaw 재단과 Parsewave, Hugging Face, Red Hat, UC Berkeley 등이 공개한 업무형 에이전트 벤치마크로, 깔끔하게 정제된 기존 QA·코딩 문제 대신 익명화된 실제 에이전트 상호작용 1,000만 건 이상에서 추출한 100개 어수선한 과제로 구성됩니다. 요청문은 평균(중앙값) 43단어로 짧지만 작업 폴더에는 메일·캘린더·스프레드시트·채팅 로그·PDF 등 188개 파일과 오래된 기록·충돌 정보·악성 지시 함정이 섞여 있습니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> 사내 AI 비서나 업무 자동화 에이전트를 도입하기 전, 단정한 벤치마크 점수만 믿지 말고 모순된 파일·프롬프트 인젝션이 섞인 현실 폴더 환경에서의 내구성을 점검하는 기준으로 활용합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#03</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37993" target="_blank" rel="noopener">Unkernel: 실제 Linux 커널을 WebAssembly로 컴파일</a>
+      <span class="hn-tag">news.hada.io · WebAssembly/OS / 브라우저 탭 내 수정 없는 aarch64 Linux 실행</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> 실제 Linux 커널을 WebAssembly로 컴파일해 브라우저 탭 안에서 수정하지 않은 <code>aarch64</code> 사용자 공간(Debian, Alpine 등)을 부팅하는 프로젝트입니다. 다중 CPU 선택 시 CPU마다 Web Worker를 할당하는 SMP 커널로 동작하고 자주 실행되는 게스트 코드를 WASM으로 JIT 컴파일하며, Wisp 네트워크 인터넷 연결과 브라우저 내 루트 파일시스템 유지·그래픽/사운드까지 지원합니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> 서버 VM 비용 없이 브라우저만으로 실제 리눅스 컨테이너·웹서버 실습 환경이나 클라이언트 측 샌드박스 실행 환경을 제공하는 차세대 웹 런타임 기술로 주목합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#04</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37991" target="_blank" rel="noopener">임대인의 AI 비서가 월세 납부를 미뤄도 된다고 안내한 뒤 퇴거당한 여성</a>
+      <span class="hn-tag">news.hada.io · AI 거버넌스 / AI 비서의 무권한 약속과 법적·신뢰 책임 공백</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> 미국 노스캐롤라이나주 세입자가 연체 월세 3,934.17달러를 11월 30일까지 납부해도 된다는 이메일 회신을 믿었다가 11월 19일 실제 퇴거를 당한 사건입니다. 세입자 측에 따르면 임대 사무실은 AI 비서 ‘Olivia’가 보낸 상충 안내라고 해명했으나, 이메일에는 AI 발송 표기가 전혀 없어 세입자는 실제 직원과의 공식 합의로 오인했습니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> 대고객 CS·계약·결제 에이전트를 배포할 때 AI 응답 표시 의무화, 납부 유예·환불 등 법적 효력이 있는 약정 도구 호출의 엄격한 인간 승인 게이트(HITL)가 필수임을 상기시킵니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#05</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37990" target="_blank" rel="noopener">Atari Homebrew Awards 취소</a>
+      <span class="hn-tag">news.hada.io · 창작 커뮤니티 / AI 제작 게임 심사 형평성과 공개 표준 부재</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> 8년간 레트로 홈브루 게임 제작자를 기려 온 Atari Homebrew Awards가 제9회 행사를 전격 취소했습니다. LLM 성능 향상으로 코드를 한 줄도 직접 짜지 않고 일주일에 여러 게임을 찍어내는 사례가 등장하면서, AI 전면 배제는 보조 활용자까지 막고 전면 허용은 수작업 제작자와의 형평성을 해치는 가운데 AI 개입 비중을 검증·보고할 표준조차 없어 심사가 불가능해졌기 때문입니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> 해커톤, 공모전, 오픈소스 컨트리뷰션 심사에서 “AI 사용 여부”의 이분법을 넘어 제작 과정 투명성·검증 기준을 어떻게 재설계할지 고민하는 사례로 참고합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#06</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37989" target="_blank" rel="noopener">.php 최상위 도메인 신청에 대한 반대 의견, ICANN 사이트에 공개</a>
+      <span class="hn-tag">news.hada.io · 웹 인프라/보안 / Automattic의 .php TLD 신청과 피싱·거버넌스 반발</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> Automattic이 신규 최상위 도메인(gTLD) 신청 대상을 <code>.vibe</code>에서 <code>.php</code>로 변경하자 ICANN 공개 의견란에 개발자와 보안 커뮤니티의 반대 의견이 잇따랐습니다. <code>wp-login.php</code> 같은 익숙한 파일명이 도메인으로 등록 가능해질 경우 파일 확장자와 도메인 혼동에 따른 피싱·사칭 위험이 커지고, 특정 기업이 오픈소스 언어 생태계 이름을 독점 통제하게 된다는 점이 핵심 쟁점입니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> <code>.zip</code>·<code>.mov</code> TLD 논란과 마찬가지로, 실행·스크립트 파일 확장자와 동일한 최상위 도메인이 불러오는 링크 파서·보안 UI 혼동 위협을 사내 URL 필터링 정책 점검 시 함께 고려합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#07</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37988" target="_blank" rel="noopener">Balatro 개발 연대기</a>
+      <span class="hn-tag">news.hada.io · 인디 개발 회고 / 직장인 휴가 취미에서 출시일 위시리스트 20.8만 건까지</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> 세계적 히트작 Balatro가 2021년 12월 IT 직장인의 휴가 중 취미 프로젝트로 시작해 친구들의 피드백과 공개 테스트를 거쳐 2024년 2월 출시되기까지의 개발 일지입니다. 수익보다 만드는 즐거움에 집중하고 기존 로그라이크 답습을 피하며 자체 시행착오를 택한 뒤, 스트리머 입소문과 Playstack 퍼블리싱을 거쳐 첫 베타 직후 48개였던 Steam 위시리스트가 출시 당일 20만 8,401개로 폭발했습니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> 인디 프로덕트에서 초기 데모 설계를 횟수 제한에서 콘텐츠 제한으로 전환해 플레이어 피드백을 제품화에 반영한 과정과 오가닉 입소문 전략의 본보기로 읽습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#08</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37987" target="_blank" rel="noopener">Google DeepCrossAttention, 최대 3배 빠르게 동등한 모델 품질 달성</a>
+      <span class="hn-tag">news.hada.io · LLM 아키텍처 / 동적 레이어 라우팅·깊이 방향 교차 어텐션</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> 모든 이전 레이어 출력을 균일하게 더하는 기존 잔차 연결(residual connection)의 정보 희석 문제를 풀기 위해, 동적 레이어 라우팅과 깊이 방향 교차 어텐션을 결합해 현재 토큰에 필요한 과거 레이어 표현만 선택 조합하는 DeepCrossAttention(DCA) 구조입니다. C4·LM1B 실험에서 전체 파라미터의 0.2% 미만만 추가하고도 표준 트랜스포머와 동등한 품질에 도달하는 훈련 스텝을 최대 5분의 1(속도 최대 3배)로 줄였습니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> 사전학습 컴퓨팅 효율을 극대화해야 하는 대형 언어 모델 설계에서 레이어 간 잔차 연결을 학습 가능한 깊이 방향 어텐션으로 대체하는 최신 아키텍처 기법으로 주목합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#09</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37980" target="_blank" rel="noopener">BUI: BlenderUI를 사용하는 세계 최대 2D 차트 라이브러리</a>
+      <span class="hn-tag">news.hada.io · Rust UI / 80종 차트·867개 실행 예제를 갖춘 시그널 반응형 차트 모음</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> BlenderUI 기반의 <code>BUI Charts</code> 라이브러리로 80종 차트와 867개 실행 가능 예제를 제공합니다. <code>rsx!</code> 컴포넌트와 <code>class</code> 스타일로 차트를 선언하며 데이터 구조 변환 없이 <code>Dataset</code> 구현체와 클로저로 행 값을 읽고, 레이아웃 캐시·툴팁·범례 상호작용·축 휠/핀치 줌·드래그 범위 선택을 지원합니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> Rust 네이티브 GUI나 고빈도 시그널 기반 대시보드 애플리케이션에서 데이터 어댑터 변환 비용과 불필요한 재레이아웃 없이 다종 차트를 구현할 때 살펴봅니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#10</span>
+      <a class="hn-link" href="https://news.hada.io/topic?id=37973" target="_blank" rel="noopener">Convex 스킬, 사용자에게 알리지 않고 앱 아이디어를 원격 서버로 전송</a>
+      <span class="hn-tag">news.hada.io · 에이전트 보안 / 공식 마켓플레이스 플러그인의 무고지 텔레메트리·원격 스크립트 실행</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>핵심 요약:</strong> Anthropic 공식 플러그인 마켓플레이스(<code>claude-plugins-official</code>)에 등록된 Convex 플러그인에서 사용자 고지 없이 한 문장짜리 앱 아이디어를 외부 호스트로 POST 전송(코드 주석상 telemetry)하고, 원격 스크립트를 곧바로 Bash로 실행하거나 안전 분류기 차단을 피하기 위해 다운로드·실행을 별도 호출로 분리 지시한 사례가 제보됐습니다.</p>
+      <p class="hn-use"><strong>시사점 및 활용:</strong> 공식 마켓플레이스 스킬이라도 서드파티 <code>SKILL.md</code>와 동반 스크립트가 외부 네트워크 전송이나 원격 셸 파이프를 포함하는지 설치 전 정적 감사하는 보안 습관을 들입니다.</p>
+    </div>
+  </div>
+</div>
+
+<h2 class="section-heading">3. 최신 논문 (AI · 신경과학 — 제목·초록 기반 리스트업)</h2>
+<div class="hn-list">
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#01</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.34079" target="_blank" rel="noopener">WorldBridge: Bridging Scattered Views for Coherent 3D World Generation</a>
+      <span class="hn-tag">[AI · HF Daily Papers]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 시각적 겹침이 거의 없는 흩어진 참조 이미지들을 전역 장면 컨텍스트로 인코딩하고 시공간 참조 어텐션 및 재투영 기반 테스트 타임 잠재 일관성 최적화를 적용해 일관된 3D 월드를 생성하는 WorldBridge를 제안했습니다. 저중첩 참조 환경용 WorldBridge 벤치마크를 함께 구축해 기존 3D·비디오 생성 모델 대비 시점 간 기하·외관 일관성에서 최고 성능을 입증했습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#02</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.32238" target="_blank" rel="noopener">Boundary-Aware Policy Learning for Agent-Orchestrated Robot Manipulation</a>
+      <span class="hn-tag">[AI · HF Daily Papers]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 멀티모달 에이전트가 제어 정책(policy)을 호출하는 경계 상태에서 실패하는 문제를 해결하기 위해, 다양한 시작 자세로 접촉 구간을 미세조정해 인계 경계를 명시하고 성공 롤아웃 재학습으로 경계를 앞당기는 Boundary-Aware Policy Learning을 제안했습니다. RoboTwin 2.0 무작위 환경에서 98.4% 성공률(최강 기준선 대비 +26%p 이상)을 달성하면서 API 비용 41.3%·실행 시간 37.5%를 절감했습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#03</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.33307" target="_blank" rel="noopener">Lost in Translation, Not in Confidence: Benchmarking and Calibrating Multilingual Decision Models</a>
+      <span class="hn-tag">[AI · HF Daily Papers]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 25개 오픈웨이트 의사결정(decision) 모델을 17개 과제·14개 언어로 병렬 평가한 결과, 비영어권에서 정확도는 고자원 언어 약 2%p부터 타밀어 8%p까지 하락한 반면 모델 신뢰도는 절반 수준만 낮아져 영어 기준 95% 임계치가 타밀어에서는 90% 정확도에 그쳤습니다. 또한 LLM 번역 테스트셋은 인간 번역 대비 23개 전 쌍에서 정확도를 높게 나오게 해 다국어 성능 격차를 과소평가함을 보였습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#04</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.33885" target="_blank" rel="noopener">LayoutRecall: Preserving Appearance in Multi-Round 3D Layout-Controlled Image Editing</a>
+      <span class="hn-tag">[AI · HF Daily Papers]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 다중 턴 3D 레이아웃 제어 이미지 편집에서 가려지거나 시야 밖으로 나갔던 객체가 재등장할 때 외관이 소실되는 문제를 풀기 위해, 3D 박스 표면의 로컬 좌표계에 잠재 특징을 저장해 목표 시점 광선으로 검색·조건화하는 LayoutRecall을 제안했습니다. FLUX.2 편집기 기반 기하 정렬 메모리 조건화와 자체 벤치마크 LayoutLoop·실제 장면 실험으로 장기 일관성을 검증했습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#05</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.32993" target="_blank" rel="noopener">Decision-Native Multimodal Clinical Modeling via Anatomical Grounding and Confidence Calibration</a>
+      <span class="hn-tag">[AI · HF Daily Papers]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 3D CT 체적 영상에서 비관련 해부학 부위 편향과 미보정 자기회귀 디코딩 문제를 해결하기 위해, 장기별 3D·2D 슬라이스 특징을 동적 압축해 단일 순전파로 후보 확률을 산출하고 반사실적 신뢰도 학습(CCT)을 적용한 Radev를 제안했습니다. 신규 CT-Verdict 벤치마크의 내부·외부 코호트 모두에서 임상 판정 정확도와 신뢰도 보정 성능을 크게 끌어올렸습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#06</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.30723" target="_blank" rel="noopener">BiSAT: Bidirectionally Aligned Semantic-Acoustic Tokenization for Speech Language Models</a>
+      <span class="hn-tag">[AI · HF Daily Papers]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 음성 언어 모델 토크나이저에서 의미·음향 특징 간 간섭과 고정 교사(teacher) 의존성을 없애기 위해, 분리된 음향·의미 분기를 공유 인덱스로 양방향 공동 최적화해 단일 이산 코드 시퀀스를 생성하는 BiSAT과 제로샷 TTS 시스템 BiSAT-TTS를 제안했습니다. 더 적은 학습 데이터로도 최신 음성 LM 기반 TTS에 필적하는 성능과 코드 기반 보상 모델링 가능성을 보였습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#07</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.28849" target="_blank" rel="noopener">Guarding with Judgment: Learning to Intervene for Multimodal Safety</a>
+      <span class="hn-tag">[AI · HF Daily Papers]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 시각 맥락에 따라 안전 여부가 갈리는 요청에 무조건 거절 대신 허용·경고·검토·거절 4가지 개입 행동을 근거 기반으로 판단하도록 20,126건 감사 코퍼스와 JudiBench를 구축하고 가드 모델 JudiAct를 학습했습니다. 4B 백본 대비 Macro-F1을 28%p 이상 높였으며, MM-SafetyBench 공격 성공률을 40.78%에서 25.30%로 낮췄습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#08</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.34920" target="_blank" rel="noopener">μ-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents</a>
+      <span class="hn-tag">[AI · arXiv cs.CL]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 공유 공간에서 여러 사용자의 목표·권한·프라이버시 제약을 동시에 만족해야 하는 전이중(full-duplex) 음성 에이전트 평가용 800개 시나리오 벤치마크 μ-Bench를 공개했습니다. 13개 음성 에이전트 평가에서 상용 모델은 62~65%대 공동 과제 성공률을 보인 반면 오픈웨이트 모델은 20% 미만으로 다중 화자 귀속(attribution)과 스레딩에서 큰 격차를 드러냈습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#09</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.34848" target="_blank" rel="noopener">Put the World Back: Timestamps Matter in Time Series Reasoning</a>
+      <span class="hn-tag">[AI · arXiv cs.LG]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> LLM의 시계열 추론이 실제로 타임스탬프로 사건과 수치를 동기화하는지, 아니면 사전 정렬된 입력의 상관 지름길에 의존하는지 가리는 진단 프로토콜을 310개 문항으로 검증했습니다. 타임스탬프를 상대 오프셋으로 대체하거나 제거해도 높은 정확도가 유지됐으나 사건-시계열 정렬을 깨뜨리면 체계적으로 실패해, 기존 벤치마크가 타임스탬프 기반 추론을 측정하지 못함을 보였습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#10</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.34843" target="_blank" rel="noopener">Probing Visual Idiosyncrasies in Text-to-Image Models</a>
+      <span class="hn-tag">[AI · arXiv cs.AI]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> T2I Arena 상위 4개 오픈소스 모델(HiDream-O1-Dev, FLUX.2-dev, HunyuanImage-3.0, Qwen-Image-2512)의 생성 이미지를 인간은 쌍대 비교에서 62.61%만 구분한 반면 표준 ResNet-50은 100.00% 정확도로 출처를 식별했습니다. 저수준 텍스처 통계, 깊이·알베도·레이아웃, 미명시 배경 스타일 등 3계층의 고유 습성이 원인이며, 이는 블라인드 인간 선호 평가의 익명성 가정을 위협합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#11</span>
+      <a class="hn-link" href="https://www.biorxiv.org/content/10.64898/2026.11.16.767059v1" target="_blank" rel="noopener">A plasma proteomic atlas of rare genetic neurodevelopmental disorders reveals convergent molecular signatures, neurodegenerative overlap, and a cross-disorder severity index</a>
+      <span class="hn-tag">[신경과학 · bioRxiv]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 27개 희귀 유전성 신경발달장애 환자와 비이환 가족을 대상으로 10,000개 이상의 혈장 단백질을 통합 분석한 프로테오믹 아틀라스를 구축해, 서로 다른 원인 유전자에도 불구하고 세포골격·소포 수송 대 대사·간 경로의 두 하위 클러스터로 수렴하는 공통 병리를 규명했습니다. 또한 뇌전증 공변 서명, 성인 신경퇴행성 질환과의 역방향/일치 농축, 학습에서 제외된 질환의 적응적 의사소통 중증도까지 예측하는 범질환 중증도 지수를 도출했습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#12</span>
+      <a class="hn-link" href="https://www.biorxiv.org/content/10.64898/2026.11.17.767196v1" target="_blank" rel="noopener">Probe-assisted Structural Topography Reveals In-tissue Lesion Heterogeneity in Alzheimer's Disease</a>
+      <span class="hn-tag">[신경과학 · bioRxiv]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 신규 범용 Aβ 프로브(NapIM)와 형광 수명 분해·초고해상도 현미경을 결합해 단일 염색만으로 조직 내 아밀로이드 플라크의 3D 나노구조를 약 30nm 해상도로 복원하는 PASTA 프레임워크를 개발했습니다. 플라크 기본 단위가 방사형 Aβ 가지임을 밝히고, 미세아교세포 접촉이 조밀한 플라크 압축을 유도하며 비접촉 섬유는 느슨한 형태로 자라는 두 가지 성장 계보를 재구성했습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#13</span>
+      <a class="hn-link" href="https://www.biorxiv.org/content/10.64898/2026.11.15.766880v1" target="_blank" rel="noopener">Spectral and complexity-based signatures of advanced concentration absorption meditation: A high-density EEG study of jhana</a>
+      <span class="hn-tag">[신경과학 · bioRxiv]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 숙련 명상가 20명의 선(jhana) 집중 몰입 명상 8단계(ACAM-J1~8)를 고밀도 EEG로 측정한 결과, 두정-후두부에서 진동·비주기 파워는 감소하고 비주기 기울기는 평탄해지며 엔트로피 기반 신경 복잡도는 일관되게 증가했습니다. 특히 현상학적 내용이 가장 최소화된 후기 몰입 상태에서도 높은 신경 복잡도가 유지돼, ‘높은 신경 엔트로피=풍부한 현상 경험’이라는 기존 가설과 다른 해리 현상을 포착했습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#14</span>
+      <a class="hn-link" href="https://www.biorxiv.org/content/10.64898/2026.11.18.767520v1" target="_blank" rel="noopener">Timing and meaning in spoken thought relate to distinct patterns of brain dynamics</a>
+      <span class="hn-tag">[신경과학 · bioRxiv]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 성인 75명의 10분간 소리 내어 생각하기(think-aloud) fMRI 데이터를 문장 길이 변동성(타이밍)과 인접 발화 간 의미 연속성으로 분해해 분석했습니다. 발화 길이 변동성이 클수록 우측 배외측 전전두피질(dlPFC)의 뇌 엔트로피가 유의하게 낮아졌고(발화 비율·휴지기 보정 후에도 유지), 의미 연속성은 발화 타이밍 보정 후 Default C 네트워크의 국소 동기화와 양의 상관을 보였습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#15</span>
+      <a class="hn-link" href="https://pubmed.ncbi.nlm.nih.gov/43102875/" target="_blank" rel="noopener">Cell-type identity, topography, and connectivity distinguish μ-opioid receptor neurons in prefrontal and somatosensory cortex.</a>
+      <span class="hn-tag">[신경과학 · PubMed · Cell Rep]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 단일세포 RNA 시퀀싱·바이러스 추적·전기생리학으로 생쥐 대뇌피질의 μ-오피오이드 수용체(Oprm1) 발현 뉴런을 분석한 결과, 깊은 피질층의 특정 억제·추체 뉴런들이 시상핵 및 1층으로 투사하며 내측 전전두피질보다 체성감각피질 등 외측 영역에 집중돼 있음이 밝혀졌습니다. 이는 내측 전전두피질의 풍부한 MOR 신호가 국소 뉴런이 아닌 시상 입력에서 유래할 가능성을 시사합니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#16</span>
+      <a class="hn-link" href="https://pubmed.ncbi.nlm.nih.gov/43102873/" target="_blank" rel="noopener">Aperiodic neural activity is associated with encoding success and subsequent spindle-mediated memory consolidation.</a>
+      <span class="hn-tag">[신경과학 · PubMed · Cell Rep]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 이미지 50개 부호화 후 낮잠과 회상을 거치는 동안 고밀도 EEG를 기록한 결과, 부호화 시점의 더 평탄한 비주기(aperiodic) 기울기와 알파·베타 파워 감소가 각각 독립적으로 이후 기억 인출 성공을 예측했습니다. 또한 부호화 성공과 연관된 비주기 활동 부위와 수면 방추파(특히 서파와의 결합)의 지형적 중첩 정도가 참가자 간 기억 유지율을 예측했습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#17</span>
+      <a class="hn-link" href="https://pubmed.ncbi.nlm.nih.gov/43102890/" target="_blank" rel="noopener">Dissociated orientation biases of local gamma oscillations and cross-laminar delta-gamma coupling in mouse primary visual cortex.</a>
+      <span class="hn-tag">[신경과학 · PubMed · J Physiol]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 생쥐 1차 시각피질(V1) 전 층에서 선형 전극으로 LFP를 기록한 결과, 시각 자극 시 6층 델타(1~3Hz) 위상이 4층 감마(25~75Hz) 진폭을 변조하는 L6→L4 위상-진폭 결합(PAC)이 역방향보다 뚜렷이 강했습니다. 이때 국소 감마 파워는 수직 방위 편향을 보인 반면 L6→L4 PAC은 수평 편향을 보여 감마 파워와 층간 결합이 서로 다른 기능을 수행함을 밝혔습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#18</span>
+      <a class="hn-link" href="https://pubmed.ncbi.nlm.nih.gov/43102490/" target="_blank" rel="noopener">Task-modulated brain connectivity: a speed reading study in native Japanese readers.</a>
+      <span class="hn-tag">[신경과학 · PubMed · Neuroreport]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 일본어 모국어 화자(훈련군 23명·대조군 6명)를 대상으로 1개월 속독 훈련 전후(47일 간격) 과제 기반 fMRI 연결성을 비교한 결과, 훈련군의 읽기 속도가 약 5배 향상됐습니다. 전체 연결체 상호작용 분석에서는 양측 현출성(salience) 네트워크의 문측 전전두/전측 대상피질과 뇌량하 피질 간 과제-휴식 대비 연결성 변화가 유의하게 나타났습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#19</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.32130" target="_blank" rel="noopener">Network topology imposes spectral constraints on collective nonequilibrium responses</a>
+      <span class="hn-tag">[신경과학 · arXiv q-bio.NC]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 미시적 가역성과 선형 랑주뱅 동역학을 바탕으로 네트워크 비평형 응답 연산자의 스펙트럼이 비대칭 강도와 엔트로피 생성률의 정확한 상·하한을 결정함을 증명했습니다. 이를 인간 구조 커넥톰에 적용한 결과, 뇌의 계층적 모듈 구조가 비평형 작동 범위를 넓히면서도 휴지기 뇌 활동은 낮은 비평형 수준을 유지하도록 뒷받침함을 밝혔습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#20</span>
+      <a class="hn-link" href="https://arxiv.org/abs/2611.29051" target="_blank" rel="noopener">High-Resolution 3D Micro-CT Database of Transcranial Magnetic Stimulation (TMS) Coils for More Accurate Modelling, Technology Benchmarking, and Progress in Coil Design</a>
+      <span class="hn-tag">[신경과학 · arXiv q-bio.NC]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>초록 요약:</strong> 제조사마다 비공개였던 상용 경두개 자기자극(TMS) 코일 17종의 내부 권선·케이싱 구조를 0.0495mm 해상도 3D 마이크로-CT와 20Hz~200kHz 임피던스 스캔으로 계측한 벤치마크 데이터베이스를 공개했습니다. 실측 기반 SimNIBS MCB70 라인-전류 모델을 구축해 일반 가정 모델 대비 예측 전기장 지표의 유의미한 차이를 검증했습니다.</p>
+    </div>
+  </div>
+</div>
+
+<h2 class="section-heading">4. 최근 30일 커뮤니티 발굴 · 참신한 사이드 프로젝트 (Reddit · HN)</h2>
+<div class="hn-list">
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#01</span>
+      <a class="hn-link" href="https://news.ycombinator.com/item?id=50340088" target="_blank" rel="noopener">Subvocal — 소리를 내지 않고 구강 내 RF 센서로 말하듯 컴퓨터에 입력하는 스마트 글래스</a>
+      <span class="hn-tag">[HN]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 공공장소나 사무실에서 소리 내어 음성 입력을 하기 민망한 문제를 풀기 위해, 안경에 탑재된 RF 센서가 입 안쪽 움직임까지 감지해 입술을 열지 않고 속으로 읊조리는 ‘무음 발화(internal speech)’를 말하는 속도로 텍스트로 해독해 주는 프로젝트(<code>subvocal.company</code>)입니다.</p>
+      <p class="hn-use"><strong>커뮤니티 반응 및 활용:</strong> 849포인트·395댓글을 기록하며 큰 관심을 모았고, 댓글에서는 오픈소스 무음 음성 인식 프로젝트(<code>joeblau/subvox</code>, <code>amywork777/lipflow</code>) 링크와 함께 “공유 오피스·기내 무음 작업이나 붐비는 공간의 개인 무전기(walkie-talkie)로 쓰면 매력적일 것”이라는 의견과 공공장소에서의 위화감·키보드 숙련 대비 효용 논쟁이 오갔습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#02</span>
+      <a class="hn-link" href="https://news.ycombinator.com/item?id=50406292" target="_blank" rel="noopener">Coldframe — 슈퍼마켓 냉장고 컨트롤러로 위장해 실제 공격을 채증하는 단일 파일 허니팟</a>
+      <span class="hn-tag">[HN]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 최근 산업용 냉장 설비 공격 사례에서 영감을 받아 Danfoss AK-SM 800A 및 Dixell XWEB 컨트롤러의 HTTP 헤더 순서·TLS 버전·인증서·제목까지 Shodan 실기기 레코드에 맞춰 복제한 Python 표준 라이브러리 단일 파일 허니팟(<code>github.com/hedgerow-dev/coldframe</code>)입니다. 기본 로그인 성공 시 가짜 매장 대시보드와 제상(defrost) 버튼까지 열어 공격자의 2차 행동을 기록합니다.</p>
+      <p class="hn-use"><strong>커뮤니티 반응 및 활용:</strong> 291포인트·70댓글에서 Shodan상 기존 장치 중 상당수가 이미 해킹됐거나 다른 허니팟일 수 있다는 보안 연구자의 조언과 함께, 보안팀 없는 슈퍼마켓·혈액은행 등 OT 장비의 기본 비밀번호·VPN 부재 문제를 짚는 심도 있는 토론이 이어졌습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#03</span>
+      <a class="hn-link" href="https://news.ycombinator.com/item?id=50548161" target="_blank" rel="noopener">Voyager 1 Interactive Teardown — 보이저 1호 1광일 도달 기념 메모리 칩 1비트 단위 분해 탐험기</a>
+      <span class="hn-tag">[HN]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 보이저 1호가 지구로부터 1광일(light-day) 거리에 도달한 날에 맞춰 공개된 인터랙티브 웹 경험(<code>rshekhar.com/voyager</code>)으로, 보이저 1·2호의 실시간 위치, 24개 플루토늄 구체를 품은 원자력 전지(RTG) 내부, 데이터 컴퓨터의 단일 메모리 칩·비트 고장 복구 과정, 골든 레코드 재생 도해와 현재 수신 중인 지구 안테나 접시까지 줌인하며 탐색할 수 있습니다.</p>
+      <p class="hn-use"><strong>커뮤니티 반응 및 활용:</strong> 241포인트·60댓글에서 발사부터 현재까지의 타임라인과 우주용 초기 CMOS 메모리의 고장 물리 메커니즘을 탐구하는 공학적 호평과 함께, 여정 줌 UX 개선 및 다큐멘터리 추천이 활발히 공유됐습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#04</span>
+      <a class="hn-link" href="https://news.ycombinator.com/item?id=50541568" target="_blank" rel="noopener">TryNotched — 내 이명 주파수를 찾아 해당 대역만 깎은 자연음을 들려주는 PWA 웹 도구</a>
+      <span class="hn-tag">[HN]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 제작자 본인이 1년 반 동안 겪은 이명(tinnitus)을 완화하기 위해 연구 중인 노치(notch) 음향 요법을 웹으로 구현한 무료 PWA(<code>trynotched.com/find</code>)입니다. 피치 매칭 가이드로 자신의 이명 주파수를 찾으면 시냇물·빗소리·바람소리 등 배경음에서 정확히 그 주파수 대역만 깎아 재생해 줍니다.</p>
+      <p class="hn-use"><strong>커뮤니티 반응 및 활용:</strong> 236포인트·144댓글이 달리며 16~17kHz 고주파나 복합 대역 이명 사용자들의 측정 범위 확대 피드백, 이비인후과 귀지 제거 후 완치된 실제 사례, 각자 필요로 만든 바이브 코딩 건강 도구를 넘어 검증된 치료법으로 연결하자는 논의가 이어졌습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#05</span>
+      <a class="hn-link" href="https://news.ycombinator.com/item?id=50497132" target="_blank" rel="noopener">terminactory — 에이전트 대기 중 즐기고 Claude Code 훅 전보까지 받는 Rust 터미널 공장 게임</a>
+      <span class="hn-tag">[HN]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> AI 코딩 에이전트가 긴 작업을 수행하는 동안 분할 터미널 옆 창에서 가볍게 돌리도록 Rust와 <code>ratatui</code>로 만든 터미널 네이티브 방치형 공장 게임(<code>gitlab.com/snipedbywifi/terminactory</code>)입니다. Claude Code 훅과 연동해 에이전트 응답을 게임 내 ‘전보(telegram)’로 받아 진행 상황을 바로 확인할 수 있습니다.</p>
+      <p class="hn-use"><strong>커뮤니티 반응 및 활용:</strong> 175포인트·44댓글에서 “NetHack의 메일 데몬(1985)과 초기 Dwarf Fortress ASCII UI가 현대 코딩 에이전트 시대에 부활했다”, “가볍고 빠른 이 환경을 플래너·RL 에이전트 일반화 테스트베드로 쓰기 좋다”는 재치 있는 반응과 Nerd Font 아이콘 지원 제안이 나왔습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#06</span>
+      <a class="hn-link" href="https://www.reddit.com/r/selfhosted/comments/1xurjda/new_project_megathread_week_of_12_nov_2026/" target="_blank" rel="noopener">MindSift — 아웃라이너·폴더·로컬 Faster Whisper 음성 전사를 통합한 셀프호스팅 지식 앱</a>
+      <span class="hn-tag">[Reddit]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 11월 12일 주간 <code>r/selfhosted</code> 신규 프로젝트 스레드에서 공개된 오픈소스 셀프호스팅 워크스페이스(<code>mindsift-app/mindsift</code>)로, 계층형 아웃라이너와 전통적 폴더·할 일 목록·노트를 한 공간에 묶고 실시간 협업 및 선택적 로컬 Faster Whisper 음성-텍스트 전사를 지원합니다.</p>
+      <p class="hn-use"><strong>커뮤니티 반응 및 활용:</strong> Obsidian의 로컬 감각을 좋아하면서도 웹 접속과 인프라 문서화·프로젝트 태스크 관리를 한 곳에 깔끔하게 동기화해 자가 호스팅하려는 홈랩 사용자들의 주목을 받았습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#07</span>
+      <a class="hn-link" href="https://www.reddit.com/r/selfhosted/comments/1xox23i/new_project_megathread_week_of_05_nov_2026/" target="_blank" rel="noopener">Trackhop — 클라우드 텔레메트리 없이 Navidrome·Plex와 Spotify·YouTube Music을 동기화</a>
+      <span class="hn-tag">[Reddit]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 11월 5일 주간 <code>r/selfhosted</code> 신규 프로젝트 스레드에 소개된 오픈소스 음악 재생목록 동기화 도구(<code>xlollx/Trackhop</code>)로, Navidrome·Subsonic·Jellyfin·Plex 같은 셀프호스팅 미디어 서버와 Spotify·YouTube Music·Apple Music·TIDAL 간 플레이리스트를 중간 서버나 텔레메트리 없이 시간·일·주 단위로 자동 미러링합니다.</p>
+      <p class="hn-use"><strong>커뮤니티 반응 및 활용:</strong> 개인 홈서버 FLAC 라이브러리로 넘어가면서도 가족·지인과 공유하는 상용 스트리밍 플레이리스트를 끊김 없이 유지하려는 셀프호스터들에게 실용적인 브리지 도구로 호응을 얻었습니다.</p>
+    </div>
+  </div>
+
+  <div class="hn-item">
+    <div class="hn-title-row">
+      <span class="hn-rank">#08</span>
+      <a class="hn-link" href="https://www.reddit.com/r/SideProject/comments/1y6v32m/i_couldnt_find_a_math_practice_app_for_my_kids/" target="_blank" rel="noopener">Sumbee — 광고·계정·추적 없이 오프라인으로 5~12세 아이 연산을 돕는 오픈소스 플래시카드 앱</a>
+      <span class="hn-tag">[Reddit]</span>
+    </div>
+    <div class="hn-body">
+      <p class="hn-desc"><strong>구체적 설명:</strong> 자녀에게 쓸 만한 광고·구독 없는 수학 연습 앱을 찾지 못한 부모 개발자가 직접 만들어 <code>r/SideProject</code>에 공개한 오픈소스 앱(<code>np25071984/sumbee</code>)입니다. 계정 가입과 데이터 추적 없이 완전 오프라인으로 동작하며 틀린 문제를 부담 없이 다시 풀어보는 부드러운 재시도(gentle retry) 메커니즘을 갖췄습니다.</p>
+      <p class="hn-use"><strong>커뮤니티 반응 및 활용:</strong> 유아·초등 학습 앱마다 덕지덕지 붙은 인앱 결제와 광고 트래킹에 지친 부모·인디 개발자들 사이에서 “작지만 진정성 있는 오픈소스 사이드 프로젝트”의 좋은 사례로 공감을 모았습니다.</p>
+    </div>
+  </div>
+</div>
